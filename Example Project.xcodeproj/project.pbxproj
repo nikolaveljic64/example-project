@@ -26,6 +26,20 @@
 		FD913374291956E900605396 /* CardType2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD913373291956E900605396 /* CardType2.swift */; };
 		FD9133762919572800605396 /* FeedVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9133752919572800605396 /* FeedVM.swift */; };
 		FD9133792919578800605396 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9133782919578800605396 /* Helpers.swift */; };
+		FD91338429195CC500605396 /* BottomPopupUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91337C29195CC500605396 /* BottomPopupUtils.swift */; };
+		FD91338529195CC500605396 /* BottomPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91337D29195CC500605396 /* BottomPopupViewController.swift */; };
+		FD91338629195CC500605396 /* BottomPopupDismissInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91337E29195CC500605396 /* BottomPopupDismissInteractionController.swift */; };
+		FD91338729195CC500605396 /* BottomPopupNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91337F29195CC500605396 /* BottomPopupNavigationController.swift */; };
+		FD91338829195CC500605396 /* BottomPopupDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91338029195CC500605396 /* BottomPopupDismissAnimator.swift */; };
+		FD91338929195CC500605396 /* BottomPopupPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91338129195CC500605396 /* BottomPopupPresentAnimator.swift */; };
+		FD91338A29195CC500605396 /* BottomPopupTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91338229195CC500605396 /* BottomPopupTransitionHandler.swift */; };
+		FD91338B29195CC500605396 /* BottomPopupPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91338329195CC500605396 /* BottomPopupPresentationController.swift */; };
+		FD91339529195D3B00605396 /* ActionVCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91339029195D3B00605396 /* ActionVCProtocol.swift */; };
+		FD91339629195D3B00605396 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91339229195D3B00605396 /* AccountCell.swift */; };
+		FD91339729195D3B00605396 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91339329195D3B00605396 /* AccountVC.swift */; };
+		FD91339B29195D5300605396 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91339A29195D5300605396 /* Account.swift */; };
+		FD91339D29195E9000605396 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD91339C29195E9000605396 /* Account.storyboard */; };
+		FD91339F29195F4600605396 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91339E29195F4600605396 /* AccountManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +64,20 @@
 		FD913373291956E900605396 /* CardType2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardType2.swift; sourceTree = "<group>"; };
 		FD9133752919572800605396 /* FeedVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVM.swift; sourceTree = "<group>"; };
 		FD9133782919578800605396 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		FD91337C29195CC500605396 /* BottomPopupUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupUtils.swift; sourceTree = "<group>"; };
+		FD91337D29195CC500605396 /* BottomPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupViewController.swift; sourceTree = "<group>"; };
+		FD91337E29195CC500605396 /* BottomPopupDismissInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissInteractionController.swift; sourceTree = "<group>"; };
+		FD91337F29195CC500605396 /* BottomPopupNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupNavigationController.swift; sourceTree = "<group>"; };
+		FD91338029195CC500605396 /* BottomPopupDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissAnimator.swift; sourceTree = "<group>"; };
+		FD91338129195CC500605396 /* BottomPopupPresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentAnimator.swift; sourceTree = "<group>"; };
+		FD91338229195CC500605396 /* BottomPopupTransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupTransitionHandler.swift; sourceTree = "<group>"; };
+		FD91338329195CC500605396 /* BottomPopupPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentationController.swift; sourceTree = "<group>"; };
+		FD91339029195D3B00605396 /* ActionVCProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionVCProtocol.swift; sourceTree = "<group>"; };
+		FD91339229195D3B00605396 /* AccountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
+		FD91339329195D3B00605396 /* AccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
+		FD91339A29195D5300605396 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		FD91339C29195E9000605396 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		FD91339E29195F4600605396 /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +111,11 @@
 			isa = PBXGroup;
 			children = (
 				FD0DAE6E291266C400F96448 /* AppDelegate.swift */,
+				FD91339E29195F4600605396 /* AccountManager.swift */,
 				FD9133772919577D00605396 /* Helpers */,
 				FD9133682919529300605396 /* Cells */,
 				FD913361291951F900605396 /* Models */,
-				FD913360291950A300605396 /* Screens */,
-				FD91335F2919509800605396 /* Components */,
+				FD91337A29195C0A00605396 /* App */,
 				FD0DAE77291266C500F96448 /* Assets.xcassets */,
 				FD0DAE79291266C500F96448 /* LaunchScreen.storyboard */,
 				FD0DAE7C291266C500F96448 /* Info.plist */,
@@ -137,6 +165,7 @@
 		FD913360291950A300605396 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FD91338C29195D0100605396 /* Account */,
 				FD91332A2919399D00605396 /* MainFeed */,
 			);
 			path = Screens;
@@ -145,6 +174,7 @@
 		FD913361291951F900605396 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FD91339929195D4700605396 /* Account */,
 				FD9133622919524900605396 /* CardType1.swift */,
 				FD913373291956E900605396 /* CardType2.swift */,
 			);
@@ -181,9 +211,61 @@
 		FD9133772919577D00605396 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FD91337B29195CC500605396 /* Bottom Sheet */,
 				FD9133782919578800605396 /* Helpers.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FD91337A29195C0A00605396 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FD913360291950A300605396 /* Screens */,
+				FD91335F2919509800605396 /* Components */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FD91337B29195CC500605396 /* Bottom Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				FD91337C29195CC500605396 /* BottomPopupUtils.swift */,
+				FD91337D29195CC500605396 /* BottomPopupViewController.swift */,
+				FD91337E29195CC500605396 /* BottomPopupDismissInteractionController.swift */,
+				FD91337F29195CC500605396 /* BottomPopupNavigationController.swift */,
+				FD91338029195CC500605396 /* BottomPopupDismissAnimator.swift */,
+				FD91338129195CC500605396 /* BottomPopupPresentAnimator.swift */,
+				FD91338229195CC500605396 /* BottomPopupTransitionHandler.swift */,
+				FD91338329195CC500605396 /* BottomPopupPresentationController.swift */,
+			);
+			path = "Bottom Sheet";
+			sourceTree = "<group>";
+		};
+		FD91338C29195D0100605396 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				FD91339029195D3B00605396 /* ActionVCProtocol.swift */,
+				FD9133A029195FE500605396 /* Cell */,
+				FD91339329195D3B00605396 /* AccountVC.swift */,
+				FD91339C29195E9000605396 /* Account.storyboard */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		FD91339929195D4700605396 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				FD91339A29195D5300605396 /* Account.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		FD9133A029195FE500605396 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FD91339229195D3B00605396 /* AccountCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +336,7 @@
 				FD0DAE78291266C500F96448 /* Assets.xcassets in Resources */,
 				FD913372291955CD00605396 /* Card2Cell.xib in Resources */,
 				FD0DAE83291267AA00F96448 /* README.md in Resources */,
+				FD91339D29195E9000605396 /* Account.storyboard in Resources */,
 				FD0DAE76291266C400F96448 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,17 +348,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD91339629195D3B00605396 /* AccountCell.swift in Sources */,
+				FD91338529195CC500605396 /* BottomPopupViewController.swift in Sources */,
+				FD91339529195D3B00605396 /* ActionVCProtocol.swift in Sources */,
+				FD91339729195D3B00605396 /* AccountVC.swift in Sources */,
 				FD91334A2919454700605396 /* Feed.swift in Sources */,
 				FD913345291944C700605396 /* FeedVC.swift in Sources */,
 				FD91335E29194FE500605396 /* MainFeedVC.swift in Sources */,
+				FD91338A29195CC500605396 /* BottomPopupTransitionHandler.swift in Sources */,
 				FD913371291955CD00605396 /* Card2Cell.swift in Sources */,
 				FD913374291956E900605396 /* CardType2.swift in Sources */,
 				FD9133762919572800605396 /* FeedVM.swift in Sources */,
+				FD91338629195CC500605396 /* BottomPopupDismissInteractionController.swift in Sources */,
+				FD91338429195CC500605396 /* BottomPopupUtils.swift in Sources */,
+				FD91338829195CC500605396 /* BottomPopupDismissAnimator.swift in Sources */,
+				FD91338B29195CC500605396 /* BottomPopupPresentationController.swift in Sources */,
+				FD91339F29195F4600605396 /* AccountManager.swift in Sources */,
 				FD91336B291952C200605396 /* CardCell.swift in Sources */,
 				FD9133792919578800605396 /* Helpers.swift in Sources */,
 				FD91334C2919456600605396 /* FeedDataType.swift in Sources */,
 				FD9133632919524900605396 /* CardType1.swift in Sources */,
+				FD91339B29195D5300605396 /* Account.swift in Sources */,
+				FD91338729195CC500605396 /* BottomPopupNavigationController.swift in Sources */,
 				FD0DAE6F291266C400F96448 /* AppDelegate.swift in Sources */,
+				FD91338929195CC500605396 /* BottomPopupPresentAnimator.swift in Sources */,
 				FD9133482919451800605396 /* FeedType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

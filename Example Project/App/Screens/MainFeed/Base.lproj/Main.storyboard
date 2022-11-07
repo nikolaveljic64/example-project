@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main Feed-->
+        <!--Main Feed for -->
         <scene sceneID="d2l-yI-DoF">
             <objects>
                 <viewController id="Z6t-4t-ibZ" customClass="MainFeedVC" customModule="Example_Project" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,7 +33,9 @@
                             <constraint firstItem="ltq-Zx-pCx" firstAttribute="trailing" secondItem="aP9-92-b9S" secondAttribute="trailing" id="nhg-IA-yTI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Main Feed" id="PEK-OZ-NU6"/>
+                    <navigationItem key="navigationItem" title="Main Feed for " id="PEK-OZ-NU6">
+                        <barButtonItem key="leftBarButtonItem" title="Accounts" id="9Ij-jE-jf1"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cik-V5-Zod" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
