@@ -8,22 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		FD0DAE6F291266C400F96448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DAE6E291266C400F96448 /* AppDelegate.swift */; };
-		FD0DAE73291266C400F96448 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DAE72291266C400F96448 /* ViewController.swift */; };
 		FD0DAE76291266C400F96448 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0DAE74291266C400F96448 /* Main.storyboard */; };
 		FD0DAE78291266C500F96448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0DAE77291266C500F96448 /* Assets.xcassets */; };
 		FD0DAE7B291266C500F96448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0DAE79291266C500F96448 /* LaunchScreen.storyboard */; };
 		FD0DAE83291267AA00F96448 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FD0DAE82291267AA00F96448 /* README.md */; };
+		FD91332D29193D9200605396 /* json1.json in Resources */ = {isa = PBXBuildFile; fileRef = FD91332C29193D9200605396 /* json1.json */; };
+		FD91333029193E5A00605396 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = FD91332F29193E5A00605396 /* ObjectMapper */; };
+		FD91333329193E9700605396 /* SwfMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91333229193E9700605396 /* SwfMainModel.swift */; };
+		FD91333629193EBB00605396 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91333529193EBB00605396 /* Helpers.swift */; };
+		FD91333829193EED00605396 /* ShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91333729193EED00605396 /* ShopItem.swift */; };
+		FD91333A2919401500605396 /* PostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9133392919401500605396 /* PostItem.swift */; };
+		FD91333C2919410500605396 /* PostFeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91333B2919410500605396 /* PostFeedResponse.swift */; };
+		FD91333E291942A100605396 /* json2.json in Resources */ = {isa = PBXBuildFile; fileRef = FD91333D291942A100605396 /* json2.json */; };
+		FD913343291944AF00605396 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD913342291944AF00605396 /* Feed.storyboard */; };
+		FD913345291944C700605396 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD913344291944C700605396 /* FeedVC.swift */; };
+		FD9133482919451800605396 /* FeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9133472919451800605396 /* FeedType.swift */; };
+		FD91334A2919454700605396 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9133492919454700605396 /* Feed.swift */; };
+		FD91334C2919456600605396 /* FeedDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91334B2919456600605396 /* FeedDataType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FD0DAE6B291266C400F96448 /* Example Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0DAE6E291266C400F96448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD0DAE72291266C400F96448 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD0DAE75291266C400F96448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD0DAE77291266C500F96448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD0DAE7A291266C500F96448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD0DAE7C291266C500F96448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD0DAE82291267AA00F96448 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		FD91332C29193D9200605396 /* json1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = json1.json; sourceTree = "<group>"; };
+		FD91333229193E9700605396 /* SwfMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwfMainModel.swift; sourceTree = "<group>"; };
+		FD91333529193EBB00605396 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		FD91333729193EED00605396 /* ShopItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItem.swift; sourceTree = "<group>"; };
+		FD9133392919401500605396 /* PostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItem.swift; sourceTree = "<group>"; };
+		FD91333B2919410500605396 /* PostFeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFeedResponse.swift; sourceTree = "<group>"; };
+		FD91333D291942A100605396 /* json2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = json2.json; sourceTree = "<group>"; };
+		FD913342291944AF00605396 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
+		FD913344291944C700605396 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		FD9133472919451800605396 /* FeedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedType.swift; sourceTree = "<group>"; };
+		FD9133492919454700605396 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		FD91334B2919456600605396 /* FeedDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD91333029193E5A00605396 /* ObjectMapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,14 +81,73 @@
 			isa = PBXGroup;
 			children = (
 				FD0DAE6E291266C400F96448 /* AppDelegate.swift */,
-				FD0DAE72291266C400F96448 /* ViewController.swift */,
-				FD0DAE74291266C400F96448 /* Main.storyboard */,
+				FD91333429193EAF00605396 /* Helpers */,
+				FD91333129193E6500605396 /* Models */,
+				FD91332B29193B7B00605396 /* Feed */,
+				FD91332A2919399D00605396 /* MainFeed */,
+				FD91333F291942C600605396 /* TableViewUI */,
 				FD0DAE77291266C500F96448 /* Assets.xcassets */,
 				FD0DAE79291266C500F96448 /* LaunchScreen.storyboard */,
 				FD0DAE7C291266C500F96448 /* Info.plist */,
 				FD0DAE82291267AA00F96448 /* README.md */,
+				FD91333D291942A100605396 /* json2.json */,
+				FD91332C29193D9200605396 /* json1.json */,
 			);
 			path = "Example Project";
+			sourceTree = "<group>";
+		};
+		FD91332A2919399D00605396 /* MainFeed */ = {
+			isa = PBXGroup;
+			children = (
+				FD0DAE74291266C400F96448 /* Main.storyboard */,
+			);
+			path = MainFeed;
+			sourceTree = "<group>";
+		};
+		FD91332B29193B7B00605396 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				FD9133462919450C00605396 /* Models */,
+				FD913342291944AF00605396 /* Feed.storyboard */,
+				FD913344291944C700605396 /* FeedVC.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		FD91333129193E6500605396 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD91333229193E9700605396 /* SwfMainModel.swift */,
+				FD91333729193EED00605396 /* ShopItem.swift */,
+				FD9133392919401500605396 /* PostItem.swift */,
+				FD91333B2919410500605396 /* PostFeedResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FD91333429193EAF00605396 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FD91333529193EBB00605396 /* Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FD91333F291942C600605396 /* TableViewUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewUI;
+			sourceTree = "<group>";
+		};
+		FD9133462919450C00605396 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD9133472919451800605396 /* FeedType.swift */,
+				FD91334B2919456600605396 /* FeedDataType.swift */,
+				FD9133492919454700605396 /* Feed.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +166,9 @@
 			dependencies = (
 			);
 			name = "Example Project";
+			packageProductDependencies = (
+				FD91332F29193E5A00605396 /* ObjectMapper */,
+			);
 			productName = "Example Project";
 			productReference = FD0DAE6B291266C400F96448 /* Example Project.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +197,9 @@
 				Base,
 			);
 			mainGroup = FD0DAE62291266C400F96448;
+			packageReferences = (
+				FD91332E29193E5A00605396 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+			);
 			productRefGroup = FD0DAE6C291266C400F96448 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,8 +215,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD0DAE7B291266C500F96448 /* LaunchScreen.storyboard in Resources */,
+				FD913343291944AF00605396 /* Feed.storyboard in Resources */,
 				FD0DAE78291266C500F96448 /* Assets.xcassets in Resources */,
+				FD91332D29193D9200605396 /* json1.json in Resources */,
 				FD0DAE83291267AA00F96448 /* README.md in Resources */,
+				FD91333E291942A100605396 /* json2.json in Resources */,
 				FD0DAE76291266C400F96448 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +231,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD0DAE73291266C400F96448 /* ViewController.swift in Sources */,
+				FD91333C2919410500605396 /* PostFeedResponse.swift in Sources */,
+				FD91334A2919454700605396 /* Feed.swift in Sources */,
+				FD913345291944C700605396 /* FeedVC.swift in Sources */,
+				FD91333329193E9700605396 /* SwfMainModel.swift in Sources */,
+				FD91333629193EBB00605396 /* Helpers.swift in Sources */,
+				FD91333A2919401500605396 /* PostItem.swift in Sources */,
+				FD91333829193EED00605396 /* ShopItem.swift in Sources */,
+				FD91334C2919456600605396 /* FeedDataType.swift in Sources */,
 				FD0DAE6F291266C400F96448 /* AppDelegate.swift in Sources */,
+				FD9133482919451800605396 /* FeedType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +387,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T2UNYGL38F;
+				DEVELOPMENT_TEAM = D8CZRNU7VX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Example Project/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -319,7 +419,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T2UNYGL38F;
+				DEVELOPMENT_TEAM = D8CZRNU7VX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Example Project/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -366,6 +466,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FD91332E29193E5A00605396 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FD91332F29193E5A00605396 /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD91332E29193E5A00605396 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FD0DAE63291266C400F96448 /* Project object */;
 }

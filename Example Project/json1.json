@@ -1,0 +1,848 @@
+[
+    {
+        "postType": "TypeOne",
+        "payload": [
+            {
+                "id": "95c989ba-c515-423b-9891-71e2f2d3c272",
+                "shop": {
+                    "id": 710,
+                    "name": "Inuovo",
+                    "profilePictureUrls": {
+                        "thumb_path1": "https://cdn.ooblee.me/DEV-GER/images/7014596.jpg",
+                        "thumb_path2": "https://cdn.ooblee.me/DEV-GER/images/7014593.jpg",
+                        "thumb_path3": "https://cdn.ooblee.me/DEV-GER/images/7014590.jpg"
+                    },
+                    "shopPhotoThumbPath1": "https://cdn.ooblee.me/DEV-GER/images/7014596.jpg",
+                    "shopPhotoThumbPath2": "https://cdn.ooblee.me/DEV-GER/images/7014593.jpg",
+                    "shopPhotoThumbPath3": "https://cdn.ooblee.me/DEV-GER/images/7014590.jpg",
+                    "shopLocation": {
+                        "city": "Berlin",
+                        "country": "Germany",
+                        "address": "Gjg",
+                        "locationId": "764",
+                        "latitude": 52.526287465373,
+                        "longitude": 13.394029140472,
+                        "workingHours": [
+                            "00:00-00:00",
+                            "00:00-00:00",
+                            "00:00-00:00",
+                            "00:00-00:00",
+                            "00:00-00:00",
+                            "closed",
+                            "closed"
+                        ],
+                        "name": "Inuovo",
+                        "phone": "69280510",
+                        "email": "oobleemaki5@gmail.com",
+                        "countryCode": "DEU"
+                    },
+                    "activated": true,
+                    "verified": false,
+                    "isFollowedByThisUser": false,
+                    "isMyShop": false
+                },
+                "city": {
+                    "id": 1,
+                    "name": "Berlin",
+                    "country": "Germany"
+                },
+                "startDate": "2022-11-07T12:46:32Z",
+                "endDate": "2022-11-08T12:55:25Z",
+                "freeItem": {
+                    "id": 14685,
+                    "type": "ProductPost",
+                    "name": "Narukvice",
+                    "priceBeforeDiscount": 45.0,
+                    "finalPrice": 0.0,
+                    "discountInCurrency": 45.0,
+                    "discountInPercentage": 10000.0,
+                    "quantity": 4,
+                    "description": "Ttt",
+                    "pictureUrls": {
+                        "thumb_path1": "https://cdn.ooblee.me/DEV-GER/images/dea5de76-853b-4f9f-a652-1264c42ca49a.jpg",
+                        "thumb_path2": "https://cdn.ooblee.me/DEV-GER/images/ded81c3a-8aba-4e19-84fb-fee7afe06db2.jpg",
+                        "thumb_path3": "https://cdn.ooblee.me/DEV-GER/images/1678fdb3-af93-4c4f-a2d3-fa834637ed34.jpg"
+                    }
+                },
+                "shoppingItems": [
+                    {
+                        "id": 14682,
+                        "type": "ProductPost",
+                        "name": "Ogrlice",
+                        "priceBeforeDiscount": 45.0,
+                        "finalPrice": 24.75,
+                        "discountInCurrency": 20.25,
+                        "discountInPercentage": 4500.0,
+                        "quantity": 4,
+                        "description": "Test",
+                        "pictureUrls": {
+                            "thumb_path1": "https://cdn.ooblee.me/DEV-GER/images/5bf725df-815d-4c5e-ac71-5c85139f405e.jpg",
+                            "thumb_path2": "https://cdn.ooblee.me/DEV-GER/images/ee6143e3-e439-4aa5-aaf0-6db52a123aed.jpg",
+                            "thumb_path3": "https://cdn.ooblee.me/DEV-GER/images/0e246c32-2bea-4ca7-8f51-b114951914d2.jpg"
+                        }
+                    }
+                ],
+                "shoppingGroups": [
+                    {
+                        "id": "7a08e298-c265-4b1e-acd9-5a3cf0ff1a64",
+                        "initiator": {
+                            "name": "Sara",
+                            "nickname": "sara",
+                            "profileId": 795,
+                            "following": false,
+                            "imageUrl": null,
+                            "isInfluencer": false,
+                            "isMyProfile": false
+                        },
+                        "joiners": [
+                            {
+                                "name": "Maja t",
+                                "nickname": "maja",
+                                "profileId": 383,
+                                "following": true,
+                                "imageUrl": "https://cdn.ooblee.me/DEV-GER/images/7011065.jpg",
+                                "isInfluencer": true,
+                                "isMyProfile": false
+                            }
+                        ],
+                        "invitees": [
+                            {
+                                "name": "Maja t",
+                                "nickname": "maja",
+                                "profileId": 383,
+                                "following": true,
+                                "imageUrl": "https://cdn.ooblee.me/DEV-GER/images/7011065.jpg",
+                                "isInfluencer": true,
+                                "isMyProfile": false
+                            },
+                            {
+                                "name": "Ursulaa",
+                                "nickname": "biljana_18",
+                                "profileId": 19,
+                                "following": true,
+                                "imageUrl": "https://cdn.ooblee.me/images/7005662.jpg",
+                                "isInfluencer": true,
+                                "isMyProfile": false
+                            },
+                            {
+                                "name": "Ingrid Schneidör",
+                                "nickname": "jeoena_12",
+                                "profileId": 13,
+                                "following": true,
+                                "imageUrl": "https://cdn.ooblee.me/DEV-GER/images/7031939.jpg",
+                                "isInfluencer": true,
+                                "isMyProfile": false
+                            }
+                        ]
+                    }
+                ],
+                "orderOptions": [
+                    "PayOnlinePickUpOnSpot"
+                ],
+                "maxNumberOfMembers": 4,
+                "membersCount": 2,
+                "discountPercentage": 45,
+                "joinThisPerson": {
+                    "name": "Ursulaa",
+                    "nickname": "biljana_18",
+                    "profileId": 19,
+                    "following": true,
+                    "imageUrl": "https://cdn.ooblee.me/images/7005662.jpg",
+                    "isInfluencer": true,
+                    "isMyProfile": false
+                },
+                "additionalVoucherAmount": 10.0,
+                "purchasedItem": null,
+                "canInitiateNewGroup": false,
+                "isCurrentUserInitiator": false,
+                "isCurrentUserJoiner": false,
+                "adminReviewed": true,
+                "adminApproved": true,
+                "shopReviewed": true,
+                "shopApproved": true,
+                "isCurrentUserParticipating": false
+            }
+        ]
+    },
+    {
+        "postType": "POST",
+        "payload": [
+            {
+                "id": 14676,
+                "productId": 12819,
+                "title": "Test",
+                "description": "Test",
+                "oldPrice": 45.00,
+                "price": 33.75,
+                "discount": 0.25,
+                "productType": "PRODUCT_POST",
+                "postType": "POST",
+                "eventId": null,
+                "published": "2022-11-07T12:20:44Z",
+                "editorsChoice": false,
+                "sponsored": false,
+                "limitation": "QUANTITY",
+                "available": 10,
+                "validToDate": null,
+                "serviceIds": [
+                    2,
+                    7
+                ],
+                "shop": {
+                    "id": 839,
+                    "title": "Villeroy&Boch",
+                    "image": "https://cdn.ooblee.me/DEV-GER/images/7027772.jpg",
+                    "trusted": false,
+                    "voteNumber": 0,
+                    "averageGrade": 0.0,
+                    "noOfPosts": null,
+                    "followers": null,
+                    "rating": null,
+                    "description": null,
+                    "location": null,
+                    "hasPromoCode": false,
+                    "vouchers": []
+                },
+                "media": [
+                    {
+                        "image": "https://cdn.ooblee.me/DEV-GER/images/1d645900-c514-48d4-8287-8a5df2567bc8.jpg",
+                        "order": 1
+                    }
+                ],
+                "social": {
+                    "liked": false,
+                    "lastLikedName": null,
+                    "lastLikedImage": null,
+                    "likesNumber": 0,
+                    "pinned": false,
+                    "pinnedNumber": 0,
+                    "following": false
+                },
+                "groupShopping": null,
+                "groupShoppingDetail": null,
+                "shopCollection": []
+            }
+        ]
+    },
+    {
+        "postType": "TypeOne",
+        "payload": [
+            {
+                "id": "babb50e1-dbb6-4ac5-9098-9bbd510f2d42",
+                "shop": {
+                    "id": 743,
+                    "name": "Nivea",
+                    "profilePictureUrls": {
+                        "thumb_path1": "https://cdn.ooblee.me/DEV-GER/images/7014785.jpg",
+                        "thumb_path2": "https://cdn.ooblee.me/DEV-GER/images/7014782.jpg",
+                        "thumb_path3": "https://cdn.ooblee.me/DEV-GER/images/7014779.jpg"
+                    },
+                    "shopPhotoThumbPath1": "https://cdn.ooblee.me/DEV-GER/images/7014785.jpg",
+                    "shopPhotoThumbPath2": "https://cdn.ooblee.me/DEV-GER/images/7014782.jpg",
+                    "shopPhotoThumbPath3": "https://cdn.ooblee.me/DEV-GER/images/7014779.jpg",
+                    "shopLocation": {
+                        "city": "Berlin",
+                        "country": "Germany",
+                        "address": "Ghg",
+                        "locationId": "797",
+                        "latitude": 52.526287465373,
+                        "longitude": 13.394029140472,
+                        "workingHours": [
+                            "00:00-00:00",
+                            "00:00-00:00",
+                            "00:00-00:00",
+                            "00:00-00:00",
+                            "00:00-00:00",
+                            "closed",
+                            "closed"
+                        ],
+                        "name": "Nivea",
+                        "phone": "69280510",
+                        "email": "cetkovicmarijana08@gmail.com",
+                        "countryCode": "DEU"
+                    },
+                    "activated": true,
+                    "verified": false,
+                    "isFollowedByThisUser": false,
+                    "isMyShop": false
+                },
+                "city": {
+                    "id": 1,
+                    "name": "Berlin",
+                    "country": "Germany"
+                },
+                "startDate": "2022-11-07T07:53:16Z",
+                "endDate": "2022-11-08T09:07:27Z",
+                "freeItem": {
+                    "id": 14646,
+                    "type": "ProductPost",
+                    "name": "Mindjuse",
+                    "priceBeforeDiscount": 33.0,
+                    "finalPrice": 0.0,
+                    "discountInCurrency": 33.0,
+                    "discountInPercentage": 10000.0,
+                    "quantity": 3,
+                    "description": "Test",
+                    "pictureUrls": {
+                        "thumb_path1": "https://cdn.ooblee.me/DEV-GER/images/47c34691-c784-4918-9de8-ebf228b13591.jpg",
+                        "thumb_path2": "https://cdn.ooblee.me/DEV-GER/images/d4e811b1-3d05-456d-a967-85eaa40956f9.jpg",
+                        "thumb_path3": "https://cdn.ooblee.me/DEV-GER/images/8cd420a3-5b93-4d39-8a7b-3037d0fe110e.jpg"
+                    }
+                },
+                "shoppingItems": [
+                    {
+                        "id": 14643,
+                        "type": "ProductPost",
+                        "name": "Bros",
+                        "priceBeforeDiscount": 35.0,
+                        "finalPrice": 15.75,
+                        "discountInCurrency": 19.25,
+                        "discountInPercentage": 5500.0,
+                        "quantity": 4,
+                        "description": "Test ",
+                        "pictureUrls": {
+                            "thumb_path1": "https://cdn.ooblee.me/DEV-GER/images/28086167-83f0-47ac-808c-4a95e4b7cd08.jpg",
+                            "thumb_path2": "https://cdn.ooblee.me/DEV-GER/images/574f7110-5686-4119-a4c5-25ab08cd2e02.jpg",
+                            "thumb_path3": "https://cdn.ooblee.me/DEV-GER/images/7a44a433-f512-4d90-9521-bcde9870d87d.jpg"
+                        }
+                    }
+                ],
+                "shoppingGroups": [
+                    {
+                        "id": "cf1a8883-db63-4b42-8cee-484321d87324",
+                        "initiator": {
+                            "name": "Maja t",
+                            "nickname": "maja",
+                            "profileId": 383,
+                            "following": true,
+                            "imageUrl": "https://cdn.ooblee.me/DEV-GER/images/7011065.jpg",
+                            "isInfluencer": true,
+                            "isMyProfile": false
+                        },
+                        "joiners": [],
+                        "invitees": []
+                    }
+                ],
+                "orderOptions": [
+                    "PayOnlinePickUpOnSpot"
+                ],
+                "maxNumberOfMembers": 3,
+                "membersCount": 1,
+                "discountPercentage": 55,
+                "joinThisPerson": {
+                    "name": "Maja t",
+                    "nickname": "maja",
+                    "profileId": 383,
+                    "following": true,
+                    "imageUrl": "https://cdn.ooblee.me/DEV-GER/images/7011065.jpg",
+                    "isInfluencer": true,
+                    "isMyProfile": false
+                },
+                "additionalVoucherAmount": 10.0,
+                "purchasedItem": null,
+                "canInitiateNewGroup": false,
+                "isCurrentUserInitiator": false,
+                "isCurrentUserJoiner": false,
+                "adminReviewed": true,
+                "adminApproved": true,
+                "shopReviewed": true,
+                "shopApproved": true,
+                "isCurrentUserParticipating": false
+            }
+        ]
+    },
+    {
+        "postType": "TypeOne",
+        "payload": [
+            {
+                "id": "581bc86e-acc2-4841-862d-17d488abebde",
+                "shop": {
+                    "id": 728,
+                    "name": "Starbucks ",
+                    "profilePictureUrls": {
+                        "thumb_path1": "https://cdn.ooblee.me/DEV-GER/images/7014704.jpg",
+                        "thumb_path2": "https://cdn.ooblee.me/DEV-GER/images/7014701.jpg",
+                        "thumb_path3": "https://cdn.ooblee.me/DEV-GER/images/7014698.jpg"
+                    },
+                    "shopPhotoThumbPath1": "https://cdn.ooblee.me/DEV-GER/images/7014704.jpg",
+                    "shopPhotoThumbPath2": "https://cdn.ooblee.me/DEV-GER/images/7014701.jpg",
+                    "shopPhotoThumbPath3": "https://cdn.ooblee.me/DEV-GER/images/7014698.jpg",
+                    "shopLocation": {
+                        "city": "Berlin",
+                        "country": "Germany",
+                        "address": "Berlin",
+                        "locationId": "782",
+                        "latitude": 52.5200066,
+                        "longitude": 13.404954,
+                        "workingHours": [
+                            "00:00-00:00",
+                            "00:00-00:00",
+                            "00:00-00:00",
+                            "00:00-00:00",
+                            "00:00-00:00",
+                            "00:00-00:00",
+                            "00:00-00:00"
+                        ],
+                        "name": "Starbucks ",
+                        "phone": "",
+                        "email": "oobleemaki8@gmail.com",
+                        "countryCode": "DEU"
+                    },
+                    "activated": true,
+                    "verified": true,
+                    "isFollowedByThisUser": true,
+                    "isMyShop": true
+                },
+                "city": {
+                    "id": 1,
+                    "name": "Berlin",
+                    "country": "Germany"
+                },
+                "startDate": "2022-11-07T07:53:16Z",
+                "endDate": "2022-11-08T12:06:28Z",
+                "freeItem": {
+                    "id": 14619,
+                    "type": "ProductPost",
+                    "name": "Test 777",
+                    "priceBeforeDiscount": 35.0,
+                    "finalPrice": 0.0,
+                    "discountInCurrency": 35.0,
+                    "discountInPercentage": 10000.0,
+                    "quantity": 7,
+                    "description": "Test 34",
+                    "pictureUrls": {
+                        "thumb_path1": "https://cdn.ooblee.me/DEV-GER/images/6836641b-2103-4d57-bf97-88317a780634.jpg",
+                        "thumb_path2": "https://cdn.ooblee.me/DEV-GER/images/ad6fc1a7-e4d5-4d60-90d7-a66d9115351d.jpg",
+                        "thumb_path3": "https://cdn.ooblee.me/DEV-GER/images/a6cd4b93-a3c7-4e93-bd49-9641738d737f.jpg"
+                    }
+                },
+                "shoppingItems": [
+                    {
+                        "id": 14616,
+                        "type": "ProductPost",
+                        "name": "Test",
+                        "priceBeforeDiscount": 45.0,
+                        "finalPrice": 33.75,
+                        "discountInCurrency": 11.25,
+                        "discountInPercentage": 2500.0,
+                        "quantity": 3,
+                        "description": "Test",
+                        "pictureUrls": {
+                            "thumb_path1": "https://cdn.ooblee.me/DEV-GER/images/1a46c16c-37d1-4d9e-85b6-0a528f7e483b.jpg",
+                            "thumb_path2": "https://cdn.ooblee.me/DEV-GER/images/dd47d5a4-8194-4dea-abf3-bd7168581309.jpg",
+                            "thumb_path3": "https://cdn.ooblee.me/DEV-GER/images/358de9d6-c941-42ad-9acd-9f78803649b7.jpg"
+                        }
+                    }
+                ],
+                "shoppingGroups": [
+                    {
+                        "id": "4a7a6505-814c-412d-b9bf-32f98707a561",
+                        "initiator": {
+                            "name": "Maja t",
+                            "nickname": "maja",
+                            "profileId": 383,
+                            "following": true,
+                            "imageUrl": "https://cdn.ooblee.me/DEV-GER/images/7011065.jpg",
+                            "isInfluencer": true,
+                            "isMyProfile": false
+                        },
+                        "joiners": [],
+                        "invitees": [
+                            {
+                                "name": "Ursulaa",
+                                "nickname": "biljana_18",
+                                "profileId": 19,
+                                "following": true,
+                                "imageUrl": "https://cdn.ooblee.me/images/7005662.jpg",
+                                "isInfluencer": true,
+                                "isMyProfile": false
+                            }
+                        ]
+                    }
+                ],
+                "orderOptions": [
+                    "PayOnlinePickUpOnSpot"
+                ],
+                "maxNumberOfMembers": 2,
+                "membersCount": 1,
+                "discountPercentage": 25,
+                "joinThisPerson": {
+                    "name": "Ursulaa",
+                    "nickname": "biljana_18",
+                    "profileId": 19,
+                    "following": true,
+                    "imageUrl": "https://cdn.ooblee.me/images/7005662.jpg",
+                    "isInfluencer": true,
+                    "isMyProfile": false
+                },
+                "additionalVoucherAmount": 22.0,
+                "purchasedItem": null,
+                "canInitiateNewGroup": false,
+                "isCurrentUserInitiator": false,
+                "isCurrentUserJoiner": false,
+                "adminReviewed": true,
+                "adminApproved": true,
+                "shopReviewed": true,
+                "shopApproved": true,
+                "isCurrentUserParticipating": false
+            }
+        ]
+    },
+    {
+        "postType": "TypeOne",
+        "payload": [
+            {
+                "id": "9dd3d762-6b2b-40bb-899d-8e0c1fc1d91e",
+                "shop": {
+                    "id": 719,
+                    "name": "Swarovski",
+                    "profilePictureUrls": {
+                        "thumb_path1": "https://cdn.ooblee.me/DEV-GER/images/7014641.jpg",
+                        "thumb_path2": "https://cdn.ooblee.me/DEV-GER/images/7014638.jpg",
+                        "thumb_path3": "https://cdn.ooblee.me/DEV-GER/images/7014635.jpg"
+                    },
+                    "shopPhotoThumbPath1": "https://cdn.ooblee.me/DEV-GER/images/7014641.jpg",
+                    "shopPhotoThumbPath2": "https://cdn.ooblee.me/DEV-GER/images/7014638.jpg",
+                    "shopPhotoThumbPath3": "https://cdn.ooblee.me/DEV-GER/images/7014635.jpg",
+                    "shopLocation": {
+                        "city": "Berlin",
+                        "country": "Germany",
+                        "address": "Bulevar",
+                        "locationId": "773",
+                        "latitude": 52.526287465373,
+                        "longitude": 13.394029140472,
+                        "workingHours": [
+                            "00:00-00:00",
+                            "00:00-00:00",
+                            "00:00-00:00",
+                            "00:00-00:00",
+                            "00:00-00:00",
+                            "closed",
+                            "closed"
+                        ],
+                        "name": "Swarovski",
+                        "phone": "69280510",
+                        "email": "oobleemaki6@gmail.com",
+                        "countryCode": "DEU"
+                    },
+                    "activated": true,
+                    "verified": false,
+                    "isFollowedByThisUser": false,
+                    "isMyShop": true
+                },
+                "city": {
+                    "id": 1,
+                    "name": "Berlin",
+                    "country": "Germany"
+                },
+                "startDate": "2022-11-05T23:00:00Z",
+                "endDate": "2022-11-07T13:06:52Z",
+                "freeItem": {
+                    "id": 14415,
+                    "type": "ProductPost",
+                    "name": "Reserve 34",
+                    "priceBeforeDiscount": 25.0,
+                    "finalPrice": 0.0,
+                    "discountInCurrency": 25.0,
+                    "discountInPercentage": 10000.0,
+                    "quantity": 0,
+                    "description": "Test",
+                    "pictureUrls": {
+                        "thumb_path1": "https://cdn.ooblee.me/DEV-GER/images/823d7822-0d5f-4b8f-900e-0fdb54612b40.jpg",
+                        "thumb_path2": "https://cdn.ooblee.me/DEV-GER/images/32ce3f0f-4c20-4dd9-9e70-c7297e92e1ce.jpg",
+                        "thumb_path3": "https://cdn.ooblee.me/DEV-GER/images/abb3db57-385a-4bed-af14-c5ef8b639d51.jpg"
+                    }
+                },
+                "shoppingItems": [
+                    {
+                        "id": 14412,
+                        "type": "ProductPost",
+                        "name": "Reserve only",
+                        "priceBeforeDiscount": 25.0,
+                        "finalPrice": 15.0,
+                        "discountInCurrency": 10.0,
+                        "discountInPercentage": 4000.0,
+                        "quantity": 0,
+                        "description": "Test",
+                        "pictureUrls": {
+                            "thumb_path1": "https://cdn.ooblee.me/DEV-GER/images/ee648a3b-8ab5-4494-858a-b3343d4de8b2.jpg",
+                            "thumb_path2": "https://cdn.ooblee.me/DEV-GER/images/0d15933a-6e8a-408d-990f-a1839a300816.jpg",
+                            "thumb_path3": "https://cdn.ooblee.me/DEV-GER/images/2d54852f-948e-499b-847b-d46df467b8e7.jpg"
+                        }
+                    }
+                ],
+                "shoppingGroups": [
+                    {
+                        "id": "3a108db9-a308-471a-813a-246f78d412fa",
+                        "initiator": {
+                            "name": "Ursulaa",
+                            "nickname": "biljana_18",
+                            "profileId": 19,
+                            "following": true,
+                            "imageUrl": "https://cdn.ooblee.me/images/7005662.jpg",
+                            "isInfluencer": true,
+                            "isMyProfile": false
+                        },
+                        "joiners": [
+                            {
+                                "name": "Ana Ana",
+                                "nickname": "ana555",
+                                "profileId": 141,
+                                "following": false,
+                                "imageUrl": "https://cdn.ooblee.me/images/7003104.jpg",
+                                "isInfluencer": false,
+                                "isMyProfile": false
+                            },
+                            {
+                                "name": "Maja t",
+                                "nickname": "maja",
+                                "profileId": 383,
+                                "following": true,
+                                "imageUrl": "https://cdn.ooblee.me/DEV-GER/images/7011065.jpg",
+                                "isInfluencer": true,
+                                "isMyProfile": false
+                            },
+                            {
+                                "name": "Anka S Gudovic",
+                                "nickname": "anka_16",
+                                "profileId": 17,
+                                "following": false,
+                                "imageUrl": "https://cdn.ooblee.me/DEV-GER/images/7032056.jpg",
+                                "isInfluencer": true,
+                                "isMyProfile": true
+                            }
+                        ],
+                        "invitees": [
+                            {
+                                "name": "Andrija Mihaljevic ",
+                                "nickname": "andrija_25",
+                                "profileId": 26,
+                                "following": false,
+                                "imageUrl": null,
+                                "isInfluencer": false,
+                                "isMyProfile": false
+                            },
+                            {
+                                "name": "Jasna",
+                                "nickname": "anq_23",
+                                "profileId": 24,
+                                "following": false,
+                                "imageUrl": null,
+                                "isInfluencer": false,
+                                "isMyProfile": false
+                            },
+                            {
+                                "name": "Tamara",
+                                "nickname": "ta_22",
+                                "profileId": 23,
+                                "following": false,
+                                "imageUrl": null,
+                                "isInfluencer": false,
+                                "isMyProfile": false
+                            },
+                            {
+                                "name": "Ilse Müller",
+                                "nickname": "ilse_21",
+                                "profileId": 22,
+                                "following": true,
+                                "imageUrl": "https://cdn.ooblee.me/images/1392452.jpg",
+                                "isInfluencer": false,
+                                "isMyProfile": false
+                            },
+                            {
+                                "name": "HajleS",
+                                "nickname": "hajle",
+                                "profileId": 145,
+                                "following": false,
+                                "imageUrl": null,
+                                "isInfluencer": false,
+                                "isMyProfile": false
+                            },
+                            {
+                                "name": "Jelena",
+                                "nickname": "jello",
+                                "profileId": 260,
+                                "following": false,
+                                "imageUrl": null,
+                                "isInfluencer": false,
+                                "isMyProfile": false
+                            },
+                            {
+                                "name": "Milos Jegdic",
+                                "nickname": "milosjegdic",
+                                "profileId": 230,
+                                "following": false,
+                                "imageUrl": null,
+                                "isInfluencer": false,
+                                "isMyProfile": false
+                            },
+                            {
+                                "name": "JelenaS",
+                                "nickname": "stara",
+                                "profileId": 218,
+                                "following": false,
+                                "imageUrl": null,
+                                "isInfluencer": false,
+                                "isMyProfile": false
+                            },
+                            {
+                                "name": "Jelena",
+                                "nickname": "xX12",
+                                "profileId": 210,
+                                "following": false,
+                                "imageUrl": "https://cdn.ooblee.me/images/7005031.jpg",
+                                "isInfluencer": false,
+                                "isMyProfile": false
+                            },
+                            {
+                                "name": "Fdsgdfgdf",
+                                "nickname": "testtest2",
+                                "profileId": 200,
+                                "following": false,
+                                "imageUrl": null,
+                                "isInfluencer": false,
+                                "isMyProfile": false
+                            },
+                            {
+                                "name": "damar doo",
+                                "nickname": "damar",
+                                "profileId": 695,
+                                "following": false,
+                                "imageUrl": "https://cdn.ooblee.me/DEV-GER/images/7028474.jpg",
+                                "isInfluencer": false,
+                                "isMyProfile": false
+                            },
+                            {
+                                "name": "PopTest",
+                                "nickname": null,
+                                "profileId": 386,
+                                "following": false,
+                                "imageUrl": null,
+                                "isInfluencer": false,
+                                "isMyProfile": false
+                            },
+                            {
+                                "name": "Tamara",
+                                "nickname": "ta_22",
+                                "profileId": 23,
+                                "following": false,
+                                "imageUrl": null,
+                                "isInfluencer": false,
+                                "isMyProfile": false
+                            },
+                            {
+                                "name": "Anka S Gudovic",
+                                "nickname": "anka_16",
+                                "profileId": 17,
+                                "following": false,
+                                "imageUrl": "https://cdn.ooblee.me/DEV-GER/images/7032056.jpg",
+                                "isInfluencer": true,
+                                "isMyProfile": true
+                            }
+                        ]
+                    }
+                ],
+                "orderOptions": [
+                    "ReserveNowPayOnSpot"
+                ],
+                "maxNumberOfMembers": 5,
+                "membersCount": 4,
+                "discountPercentage": 40,
+                "joinThisPerson": {
+                    "name": "Ilse Müller",
+                    "nickname": "ilse_21",
+                    "profileId": 22,
+                    "following": true,
+                    "imageUrl": "https://cdn.ooblee.me/images/1392452.jpg",
+                    "isInfluencer": false,
+                    "isMyProfile": false
+                },
+                "additionalVoucherAmount": 0.0,
+                "purchasedItem": {
+                    "id": 14412,
+                    "type": "ProductPost",
+                    "name": "Reserve only",
+                    "priceBeforeDiscount": 25.0,
+                    "finalPrice": 15.0,
+                    "discountInCurrency": 10.0,
+                    "discountInPercentage": 4000.0,
+                    "quantity": 0,
+                    "description": "Test",
+                    "pictureUrls": {
+                        "thumb_path1": "https://cdn.ooblee.me/DEV-GER/images/ee648a3b-8ab5-4494-858a-b3343d4de8b2.jpg",
+                        "thumb_path2": "https://cdn.ooblee.me/DEV-GER/images/0d15933a-6e8a-408d-990f-a1839a300816.jpg",
+                        "thumb_path3": "https://cdn.ooblee.me/DEV-GER/images/2d54852f-948e-499b-847b-d46df467b8e7.jpg"
+                    },
+                    "purchased": true
+                },
+                "canInitiateNewGroup": false,
+                "isCurrentUserInitiator": false,
+                "isCurrentUserJoiner": true,
+                "adminReviewed": true,
+                "adminApproved": true,
+                "shopReviewed": true,
+                "shopApproved": true,
+                "isCurrentUserParticipating": true
+            }
+        ]
+    },
+    {
+        "postType": "NEW_COLLECTION",
+        "payload": [
+            {
+                "id": 14379,
+                "productId": 12555,
+                "title": "Reserve 34",
+                "description": "Test",
+                "oldPrice": 25.00,
+                "price": 25.00,
+                "discount": 0,
+                "productType": "SHOP_ITEM",
+                "postType": "POST",
+                "eventId": null,
+                "published": "2022-11-04T12:08:52Z",
+                "editorsChoice": false,
+                "sponsored": false,
+                "limitation": "QUANTITY",
+                "available": 1,
+                "validToDate": "2022-11-07T13:06:36.000Z",
+                "serviceIds": [
+                    2
+                ],
+                "shop": {
+                    "id": 719,
+                    "title": "Swarovski",
+                    "image": "https://cdn.ooblee.me/DEV-GER/images/7014641.jpg",
+                    "trusted": false,
+                    "voteNumber": 0,
+                    "averageGrade": 0.0,
+                    "noOfPosts": null,
+                    "followers": null,
+                    "rating": null,
+                    "description": null,
+                    "location": null,
+                    "hasPromoCode": false,
+                    "vouchers": []
+                },
+                "media": [
+                    {
+                        "image": "https://cdn.ooblee.me/DEV-GER/images/abb3db57-385a-4bed-af14-c5ef8b639d51.jpg",
+                        "order": 1
+                    }
+                ],
+                "social": {
+                    "liked": false,
+                    "lastLikedName": "",
+                    "lastLikedImage": null,
+                    "likesNumber": 0,
+                    "pinned": false,
+                    "pinnedNumber": 0,
+                    "following": false
+                },
+                "groupShopping": null,
+                "groupShoppingDetail": null,
+                "shopCollection": []
+            }
+        ]
+    }
+]
