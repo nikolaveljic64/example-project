@@ -6,20 +6,25 @@
 //
 
 import Foundation
-import ObjectMapper
+import UIKit
 
-struct V2PostMapping: MapContext {
-    static var dateFormatter: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.timeZone = TimeZone(secondsFromGMT: 0)
-        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z"
-        return formatter
+protocol VCProtocol: AnyObject {
+    func inProgress(action: Action?)
+    func onSuccess(data: Any?, action: Action?)
+    func onError(error: Error, action: Action?)
+}
+
+
+enum Action {
+    case getData
+}
+
+// MARK: - Nib init
+extension UIView {
+    static var nib: UINib {
+        return UINib(nibName: String(describing: self), bundle: nil)
     }
-    
-    static var dateShortFormatter: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.timeZone = TimeZone(secondsFromGMT: 0)
-        formatter.dateFormat = "yyyy-MM-dd"
-        return formatter
+    class func fromNib<T: UIView>() -> T! {
+        return Bundle.main.loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as? T
     }
 }

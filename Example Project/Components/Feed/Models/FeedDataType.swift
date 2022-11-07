@@ -9,6 +9,5 @@ import Foundation
 
 /// Cell Type
 enum FeedDataType {
-    case post
-    case swf
+    case cardType1
 }

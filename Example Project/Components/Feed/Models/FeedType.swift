@@ -9,6 +9,6 @@ import Foundation
 
 /// Screen Type
 enum FeedType {
-    case mainFeed
+    case mainCardFeed
 }
 

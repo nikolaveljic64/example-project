@@ -1,5 +1,5 @@
 //
-//  PostCell.swift
+//  CardCell.swift
 //  Example Project
 //
 //  Created by Nikola Veljic on 7.11.22..
@@ -7,8 +7,10 @@
 
 import UIKit
 
-class PostCell: UITableViewCell {
+class CardCell: UITableViewCell {
 
+    static var cellIdentifier = "CardCell"
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

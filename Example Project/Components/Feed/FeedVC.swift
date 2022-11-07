@@ -15,11 +15,22 @@ class FeedVC: UIViewController {
     
     // Private variables
     private var data: [Feed] = []
+    private let feedVM = FeedVM()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.register(CardCell.nib, forCellReuseIdentifier: CardCell.cellIdentifier)
+        
+        feedVM.delegate = self
+        
+        loadData()
+    }
+    
+    func loadData() {
+        feedVM.getData()
     }
 }
 
@@ -35,13 +46,37 @@ extension FeedVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch data[indexPath.row].type {
-        case .post: break
-        case .swf: break
+        case .cardType1:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: CardCell.cellIdentifier, for: indexPath) as? CardCell {
+                return cell
+            }
             
         default: break
         }
         
         return UITableViewCell()
+    }
+}
+
+extension FeedVC: VCProtocol {
+    
+    func inProgress(action: Action?) {
+        
+    }
+    
+    func onSuccess(data: Any?, action: Action?) {
+        switch action {
+        case .getData:
+            if let data = data as? [Feed] {
+                self.data = data
+                self.tableView.reloadData()
+            }
+        default: break
+        }
+    }
+    
+    func onError(error: Error, action: Action?) {
+        print(error.localizedDescription)
     }
     
     

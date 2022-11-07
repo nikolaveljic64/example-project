@@ -10,10 +10,7 @@ import Foundation
 struct Feed {
     var type: FeedDataType!
     // Data
-    var shops: [ShopItem]?
-    var post: PostItem?
-    var posts: [PostItem]?
-    var swfModel: SwfMainModel?
+    var cardType1: CardType1?
 }
 
 extension Feed {
