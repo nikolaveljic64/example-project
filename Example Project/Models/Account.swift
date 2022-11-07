@@ -13,7 +13,6 @@ struct Account {
 }
 
 
-
 var dammyAccounts = [Account(name: "One"),
                      Account(name: "Two"),
                      Account(name: "Three"),

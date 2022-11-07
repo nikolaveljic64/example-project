@@ -174,7 +174,7 @@
 		FD913361291951F900605396 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FD91339929195D4700605396 /* Account */,
+				FD91339A29195D5300605396 /* Account.swift */,
 				FD9133622919524900605396 /* CardType1.swift */,
 				FD913373291956E900605396 /* CardType2.swift */,
 			);
@@ -248,14 +248,6 @@
 				FD9133A029195FE500605396 /* Cell */,
 				FD91339329195D3B00605396 /* AccountVC.swift */,
 				FD91339C29195E9000605396 /* Account.storyboard */,
-			);
-			path = Account;
-			sourceTree = "<group>";
-		};
-		FD91339929195D4700605396 /* Account */ = {
-			isa = PBXGroup;
-			children = (
-				FD91339A29195D5300605396 /* Account.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";

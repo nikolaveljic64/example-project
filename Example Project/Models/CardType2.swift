@@ -13,4 +13,7 @@ struct CardType2 {
 }
 
 
-var dammyCardType2Object = CardType2(title: "Title 1", description: "Description 1")
+var dammyCardType2Object1 = CardType2(title: "Title 1", description: "Description 1")
+
+
+var dammyCardType2Object2 = CardType2(title: "Title 2", description: "Description 2")

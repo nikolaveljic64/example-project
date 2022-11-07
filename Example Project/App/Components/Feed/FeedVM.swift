@@ -23,9 +23,15 @@ class FeedVM {
         var data: [Feed] = []
         
     
+        // This can be load from API
         for item in arrayCardType {
             data.append(Feed(type: .cardType1, cardType1: item))
         }
+        
+        // This can be load from API
+        data.append(Feed(type: .cardType2, cardType2: dammyCardType2Object1))
+        data.append(Feed(type: .cardType2, cardType2: dammyCardType2Object2))
+        
         
         delegate.onSuccess(data: data, action: .getData)
         

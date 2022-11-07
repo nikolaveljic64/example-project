@@ -11,6 +11,7 @@ struct Feed {
     var type: FeedDataType!
     // Data
     var cardType1: CardType1?
+    var cardType2: CardType2?
 }
 
 extension Feed {

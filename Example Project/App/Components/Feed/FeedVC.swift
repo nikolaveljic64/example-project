@@ -22,6 +22,7 @@ class FeedVC: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.register(Card2Cell.nib, forCellReuseIdentifier: Card2Cell.cellIdentifier)
         tableView.register(CardCell.nib, forCellReuseIdentifier: CardCell.cellIdentifier)
         
         feedVM.delegate = self
@@ -48,6 +49,10 @@ extension FeedVC: UITableViewDelegate, UITableViewDataSource {
         switch data[indexPath.row].type {
         case .cardType1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: CardCell.cellIdentifier, for: indexPath) as? CardCell {
+                return cell
+            }
+        case .cardType2:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: Card2Cell.cellIdentifier, for: indexPath) as? Card2Cell {
                 return cell
             }
             

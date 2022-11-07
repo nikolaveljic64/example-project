@@ -10,4 +10,5 @@ import Foundation
 /// Cell Type
 enum FeedDataType {
     case cardType1
+    case cardType2
 }
