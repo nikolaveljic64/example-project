@@ -1,6 +1,6 @@
 [
     {
-        "postType": "TypeOne",
+        "postType": "SHOPPING_WITH_FRIENDS",
         "payload": [
             {
                 "id": "95c989ba-c515-423b-9891-71e2f2d3c272",
@@ -225,7 +225,7 @@
         ]
     },
     {
-        "postType": "TypeOne",
+        "postType": "SHOPPING_WITH_FRIENDS",
         "payload": [
             {
                 "id": "babb50e1-dbb6-4ac5-9098-9bbd510f2d42",
@@ -352,7 +352,7 @@
         ]
     },
     {
-        "postType": "TypeOne",
+        "postType": "SHOPPING_WITH_FRIENDS",
         "payload": [
             {
                 "id": "581bc86e-acc2-4841-862d-17d488abebde",
@@ -489,7 +489,7 @@
         ]
     },
     {
-        "postType": "TypeOne",
+        "postType": "SHOPPING_WITH_FRIENDS",
         "payload": [
             {
                 "id": "9dd3d762-6b2b-40bb-899d-8e0c1fc1d91e",

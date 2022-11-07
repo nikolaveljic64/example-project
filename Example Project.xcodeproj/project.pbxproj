@@ -25,6 +25,9 @@
 		FD9133482919451800605396 /* FeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9133472919451800605396 /* FeedType.swift */; };
 		FD91334A2919454700605396 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9133492919454700605396 /* Feed.swift */; };
 		FD91334C2919456600605396 /* FeedDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91334B2919456600605396 /* FeedDataType.swift */; };
+		FD91335B29194CAD00605396 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91335929194CAD00605396 /* PostCell.swift */; };
+		FD91335C29194CAD00605396 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD91335A29194CAD00605396 /* PostCell.xib */; };
+		FD91335E29194FE500605396 /* MainFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91335D29194FE500605396 /* MainFeedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,9 @@
 		FD9133472919451800605396 /* FeedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedType.swift; sourceTree = "<group>"; };
 		FD9133492919454700605396 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		FD91334B2919456600605396 /* FeedDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataType.swift; sourceTree = "<group>"; };
+		FD91335929194CAD00605396 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		FD91335A29194CAD00605396 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
+		FD91335D29194FE500605396 /* MainFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 				FD91332B29193B7B00605396 /* Feed */,
 				FD91332A2919399D00605396 /* MainFeed */,
 				FD91333F291942C600605396 /* TableViewUI */,
+				FD91335729194C8700605396 /* Cells */,
 				FD0DAE77291266C500F96448 /* Assets.xcassets */,
 				FD0DAE79291266C500F96448 /* LaunchScreen.storyboard */,
 				FD0DAE7C291266C500F96448 /* Info.plist */,
@@ -100,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				FD0DAE74291266C400F96448 /* Main.storyboard */,
+				FD91335D29194FE500605396 /* MainFeedVC.swift */,
 			);
 			path = MainFeed;
 			sourceTree = "<group>";
@@ -148,6 +156,23 @@
 				FD9133492919454700605396 /* Feed.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FD91335729194C8700605396 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FD91335829194C9D00605396 /* PostCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FD91335829194C9D00605396 /* PostCell */ = {
+			isa = PBXGroup;
+			children = (
+				FD91335929194CAD00605396 /* PostCell.swift */,
+				FD91335A29194CAD00605396 /* PostCell.xib */,
+			);
+			path = PostCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +242,7 @@
 				FD0DAE7B291266C500F96448 /* LaunchScreen.storyboard in Resources */,
 				FD913343291944AF00605396 /* Feed.storyboard in Resources */,
 				FD0DAE78291266C500F96448 /* Assets.xcassets in Resources */,
+				FD91335C29194CAD00605396 /* PostCell.xib in Resources */,
 				FD91332D29193D9200605396 /* json1.json in Resources */,
 				FD0DAE83291267AA00F96448 /* README.md in Resources */,
 				FD91333E291942A100605396 /* json2.json in Resources */,
@@ -236,9 +262,11 @@
 				FD913345291944C700605396 /* FeedVC.swift in Sources */,
 				FD91333329193E9700605396 /* SwfMainModel.swift in Sources */,
 				FD91333629193EBB00605396 /* Helpers.swift in Sources */,
+				FD91335E29194FE500605396 /* MainFeedVC.swift in Sources */,
 				FD91333A2919401500605396 /* PostItem.swift in Sources */,
 				FD91333829193EED00605396 /* ShopItem.swift in Sources */,
 				FD91334C2919456600605396 /* FeedDataType.swift in Sources */,
+				FD91335B29194CAD00605396 /* PostCell.swift in Sources */,
 				FD0DAE6F291266C400F96448 /* AppDelegate.swift in Sources */,
 				FD9133482919451800605396 /* FeedType.swift in Sources */,
 			);
