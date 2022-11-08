@@ -51,6 +51,8 @@ extension CardCollectionVC: UICollectionViewDelegate, UICollectionViewDataSource
         switch type {
         case .mainFeed:
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardCollectionViewCell.cellIdentifier, for: indexPath) as? CardCollectionViewCell {
+                cell.indexPath = indexPath
+                cell.delegate = self
                 cell.configCell(item: data[indexPath.row])
                 return cell
             }
@@ -98,9 +100,28 @@ extension CardCollectionVC: UICollectionViewDelegate, UICollectionViewDataSource
 }
 
 
-extension CardCollectionVC: CardCollectionVCProtocol {
+extension CardCollectionVC: CardCollectionCellProtocol {
+    func didSelect(indexPath: IndexPath?, action: CardCollectionCellAction, data: Any?) {
+        switch action {
+        case .toogleStatus:
+            guard let indexPath else { return }
+            self.data[indexPath.row].active.toggle()
+            self.collectionView.reloadItems(at: [indexPath])
+        }
+    }
     
-    func didSelect(indexPath: IndexPath?, action: CardCollectionVCAction?, data: Any?) {
+}
+
+extension CardCollectionVC : CardCollectionVCProtocol {
+    func inProgress(action: CardCollectionVCAction?) {
+            
+    }
+    
+    func onSuccess(data: Any?, action: CardCollectionVCAction?) {
+        
+    }
+    
+    func onError(error: Error, action: CardCollectionVCAction?) {
         
     }
     

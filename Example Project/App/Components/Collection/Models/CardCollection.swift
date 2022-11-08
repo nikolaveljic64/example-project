@@ -14,7 +14,9 @@ enum CardCollectionType {
 
 //MARK: VC
 protocol CardCollectionVCProtocol: AnyObject {
-    func didSelect(indexPath: IndexPath?, action: CardCollectionVCAction?, data: Any?)
+    func inProgress(action: CardCollectionVCAction?)
+    func onSuccess(data: Any?, action: CardCollectionVCAction?)
+    func onError(error: Error, action: CardCollectionVCAction?)
 }
 
 enum CardCollectionVCAction {
@@ -29,5 +31,5 @@ protocol CardCollectionCellProtocol: AnyObject {
 
 /// Cell Action
 enum CardCollectionCellAction {
-
+    case toogleStatus
 }

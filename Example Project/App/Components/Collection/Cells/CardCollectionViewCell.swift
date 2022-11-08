@@ -16,6 +16,10 @@ class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var statusSwitch: UISwitch!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    
+    var indexPath: IndexPath!
+    weak var delegate : CardCollectionCellProtocol?
+    
     override func awakeFromNib() {
         
         super.awakeFromNib()
@@ -33,7 +37,7 @@ class CardCollectionViewCell: UICollectionViewCell {
     }
     
     @IBAction func didTapStatusSwitch(_ sender: UISwitch) {
-//        delegate.didSelect(indexPath: indexPath, action: .toogleStatus, data: item)
+        delegate?.didSelect(indexPath: indexPath, action: .toogleStatus, data: nil)
     }
 
 }
