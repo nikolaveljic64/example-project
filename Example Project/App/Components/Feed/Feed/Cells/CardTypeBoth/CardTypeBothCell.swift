@@ -25,7 +25,7 @@ class CardTypeBothCell: UITableViewCell {
     
     weak var delegate: CellProtocol!
     var indexPath: IndexPath?
-    var item: CardModel1?
+    var item: CardModel?
     
     private var type: CellType = .cardType2
     
@@ -36,7 +36,7 @@ class CardTypeBothCell: UITableViewCell {
     
     
     
-    func configCell(item: CardModel1?, type: CellType = .cardType2) {
+    func configCell(item: CardModel?, type: CellType = .cardType2) {
         self.item = item
        
         guard let item else { return }

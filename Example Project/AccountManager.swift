@@ -20,7 +20,7 @@ class AccountManager {
     
     func onStart() {
         /// Load accounts on oppening screen
-        self.accounts = dammyAccounts
+        self.accounts = dummyAccounts
         
         
         // Get from Database or something

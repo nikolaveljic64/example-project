@@ -22,7 +22,7 @@ class Card2Cell: UITableViewCell {
         // Initialization code
     }
 
-    func configCell(item: CardModel1?) {
+    func configCell(item: CardModel?) {
         guard let item else { return }
         
         self.titleLabel.text = item.title

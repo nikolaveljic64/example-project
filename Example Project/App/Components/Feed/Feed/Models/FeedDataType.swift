@@ -12,4 +12,5 @@ enum FeedDataType {
     case cardType1
     case cardType2
     case cardTypeBoth
+    case collectionViewEmbeded
 }

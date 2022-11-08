@@ -30,9 +30,9 @@ class FeedVM {
         // API different for ID
         if AccountManager.shared.selectedAccount?.id == 1 {
             // First Type
-            data.append(Feed(type: .cardType1, cardType1: arrayCardModel.first))
+            data.append(Feed(type: .cardType1, cardType1: dummyArrayCardModel.first))
         } else {
-            for item in arrayCardModel {
+            for item in dummyArrayCardModel {
                 data.append(Feed(type: .cardType1, cardType1: item))
             }
            
@@ -41,14 +41,18 @@ class FeedVM {
         // This can be load from API
         // Secont Type
         // And other API which can load other cards but for different purpose
-        data.append(Feed(type: .cardType2, cardType2: dammyCardModelOne))
+        data.append(Feed(type: .cardType2, cardType2: dummyCardModelOne))
         
         
         // Both Types , some logic to separate those two card , maybe with field inside object or based on screen
-        data.append(Feed(type: .cardTypeBoth, cardType: dammyCardModelTwo))
+        data.append(Feed(type: .cardTypeBoth, cardType: dummyCardModelTwo))
         
         // Both Types , some logic to separate those two card , maybe with field inside object or based on screen
-        data.append(Feed(type: .cardTypeBoth, cardType: dammyCardModelThree))
+        data.append(Feed(type: .cardTypeBoth, cardType: dummyCardModelThree))
+        
+        
+        // Collection View
+        data.append(Feed(type: .collectionViewEmbeded, cardArrays: dummyArray2CardModel))
      
         delegate.onSuccess(data: data, action: .getData)
         

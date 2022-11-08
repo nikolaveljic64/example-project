@@ -14,5 +14,5 @@ struct Account {
 }
 
 
-var dammyAccounts = [Account(name: "One",id: 1),
+var dummyAccounts = [Account(name: "One",id: 1),
                      Account(name: "Two",id: 2)]

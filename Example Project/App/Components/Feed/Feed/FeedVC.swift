@@ -27,6 +27,7 @@ class FeedVC: UIViewController {
         tableView.register(Card2Cell.nib, forCellReuseIdentifier: Card2Cell.cellIdentifier)
         tableView.register(CardCell.nib, forCellReuseIdentifier: CardCell.cellIdentifier)
         tableView.register(CardTypeBothCell.nib, forCellReuseIdentifier: CardTypeBothCell.cellIdentifier)
+        tableView.register(CardWidget.nib, forCellReuseIdentifier: CardWidget.cellIdentifier)
         
         feedVM.delegate = self
         
@@ -71,6 +72,14 @@ extension FeedVC: UITableViewDelegate, UITableViewDataSource {
                 cell.indexPath = indexPath
                 return cell
             }
+        case .collectionViewEmbeded:
+            // How to have automatic height when we use embeded collection view
+            if let cell = tableView.dequeueReusableCell(withIdentifier: CardWidget.cellIdentifier, for: indexPath) as? CardWidget {
+                cell.configCell(items: data[indexPath.row].cardArrays)
+                return cell
+            }
+            
+            break
             
         default: break
         }
@@ -104,7 +113,7 @@ extension FeedVC: CellProtocol {
                 self.data[indexPath.row].cardType1?.active.toggle()
             case .cardTypeBoth:
                 // To pass data
-                if let cardType = data as? CardModel1 {
+                if let cardType = data as? CardModel {
                     self.data[indexPath.row].cardType = cardType
                 }
            

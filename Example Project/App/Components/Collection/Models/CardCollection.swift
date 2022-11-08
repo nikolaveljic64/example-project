@@ -1,5 +1,5 @@
 //
-//  AccountCollectionVC.swift
+//  CardCollection.swift
 //  Example Project
 //
 //  Created by Nikola Veljic on 8.11.22..

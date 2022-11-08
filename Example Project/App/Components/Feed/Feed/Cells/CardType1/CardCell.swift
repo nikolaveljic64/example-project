@@ -19,14 +19,14 @@ class CardCell: UITableViewCell {
     
     weak var delegate: CellProtocol!
     var indexPath: IndexPath?
-    var item: CardModel1?
+    var item: CardModel?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    func configCell(item: CardModel1?) {
+    func configCell(item: CardModel?) {
         guard let item else { return }
         
         self.titleLabel.text = item.title

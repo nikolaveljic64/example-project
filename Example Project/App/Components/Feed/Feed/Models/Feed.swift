@@ -10,9 +10,11 @@ import Foundation
 struct Feed {
     var type: FeedDataType!
     // Data
-    var cardType1: CardModel1?
-    var cardType2: CardModel1?
-    var cardType: CardModel1?
+    var cardType1: CardModel?
+    var cardType2: CardModel?
+    var cardType: CardModel?
+    
+    var cardArrays: [CardModel]?
 }
 
 extension Feed {
