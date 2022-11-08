@@ -72,6 +72,19 @@ extension FeedVC: UITableViewDelegate, UITableViewDataSource {
         
         return UITableViewCell()
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch data[indexPath.row].type {
+        case .cardType1:
+           break
+        case .cardType2:
+           break
+        case .cardTypeBoth:
+           break
+        default: break
+        }
+    }
+    
 }
 
 extension FeedVC: VCProtocol {
