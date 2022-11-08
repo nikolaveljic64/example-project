@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Selection SheetVC-->
+        <!--AccountVC-->
         <scene sceneID="lrF-fK-Z3m">
             <objects>
-                <viewController storyboardIdentifier="ChangeLanguageViewController" id="XuX-uH-Hri" customClass="SelectionSheetVC" customModule="ooblee" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccountVC" id="XuX-uH-Hri" customClass="AccountVC" customModule="Example_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nAm-mw-hPw">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,15 +31,12 @@
                                 <state key="normal" title="Close">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
-                                <connections>
-                                    <action selector="didTapClose:" destination="XuX-uH-Hri" eventType="touchUpInside" id="dlB-mC-o0D"/>
-                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dgU-oY-Ss8">
                                 <rect key="frame" x="0.0" y="133.66666666666669" width="393" height="684.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LanguageTableViewCell" rowHeight="75" id="FQV-xa-Klh" customClass="AccountCell" customModule="Example_Project" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountCell" rowHeight="75" id="FQV-xa-Klh" customClass="AccountCell" customModule="Example_Project" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FQV-xa-Klh" id="A9k-h8-RWY">
@@ -99,8 +96,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="dgU-oY-Ss8" id="C6G-gf-xpy"/>
-                        <outlet property="titleLabel" destination="uze-Og-mG9" id="ZVc-ro-0Eo"/>
+                        <outlet property="tableView" destination="dgU-oY-Ss8" id="mXg-Sg-yNl"/>
+                        <outlet property="titleLabel" destination="uze-Og-mG9" id="B5K-lj-06h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tjj-XZ-09q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

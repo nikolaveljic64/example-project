@@ -9,12 +9,16 @@ import UIKit
 
 class MainFeedVC: UIViewController {
     
+    
+    
+    var mainFeedVM = MainFeedVM()
     var feedVC: FeedVC!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        self.title = "Main Feed for \(AccountManager.shared.selectedAccount?.name ?? "")"
+        self.mainFeedVM.delegate = self
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -27,5 +31,29 @@ class MainFeedVC: UIViewController {
             }
         default: break
         }
+    }
+    
+    @IBAction func didTapAccounts(_ sender: UIBarButtonItem) {
+        mainFeedVM.openAccount(self)
+    }
+}
+
+extension MainFeedVC: AccountVCProtocol {
+    func didSelect(_ account: Account) {
+        self.title = "Main Feed for \(account.name ?? "")"
+    }
+}
+
+extension MainFeedVC: VCProtocol {
+    func inProgress(action: Action?) {
+        
+    }
+    
+    func onSuccess(data: Any?, action: Action?) {
+        
+    }
+    
+    func onError(error: Error, action: Action?) {
+        
     }
 }

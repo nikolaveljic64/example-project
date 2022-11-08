@@ -12,7 +12,7 @@ class AccountVC: BottomPopupViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
   
-    weak var delegate: ActionVCProtocol?
+    weak var delegate: AccountVCProtocol?
    
     ///  Language
     var selectedAccount: Account?
@@ -24,7 +24,8 @@ class AccountVC: BottomPopupViewController {
         tableView.dataSource = self
         tableView.separatorInset = .init(top: 0, left: 20, bottom: 0, right: 20)
         tableView.separatorColor = #colorLiteral(red: 0.8352941176, green: 0.8352941176, blue: 0.8352941176, alpha: 1)
-    
+        
+        // This
         accounts = AccountManager.shared.accounts
        
         setupData()
@@ -63,7 +64,9 @@ class AccountVC: BottomPopupViewController {
 extension AccountVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: AccountCell.cellIdentifier, for: indexPath) as? AccountCell else { fatalError() }
-   
+        
+        cell.configCell(title:  accounts[indexPath.row].name, selectedAccount?.name ==  accounts[indexPath.row].name)
+        
         return cell
     }
     
@@ -74,6 +77,7 @@ extension AccountVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         delegate?.didSelect(accounts[indexPath.row])
+        AccountManager.shared.selectedAccount = accounts[indexPath.row]
         tableView.reloadData()
         dismiss(animated: true, completion: nil)
     }

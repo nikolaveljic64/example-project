@@ -11,6 +11,10 @@ class Card2Cell: UITableViewCell {
 
     static var cellIdentifier = "Card2Cell"
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var containerView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

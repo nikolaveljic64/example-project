@@ -14,10 +14,11 @@ class AccountCell: UITableViewCell {
         // Initialization code
     }
     
-    func configCell(_ selected : Bool) {
+    func configCell(title: String?, _ selected : Bool) {
         
         checkImage.isHidden = !selected
         titleLabel.textColor = selected ? .red : .black
+        titleLabel.text = title
         
     }
 }

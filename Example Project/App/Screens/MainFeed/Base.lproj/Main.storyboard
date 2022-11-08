@@ -34,7 +34,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main Feed for " id="PEK-OZ-NU6">
-                        <barButtonItem key="leftBarButtonItem" title="Accounts" id="9Ij-jE-jf1"/>
+                        <barButtonItem key="leftBarButtonItem" title="Accounts" id="9Ij-jE-jf1">
+                            <connections>
+                                <action selector="didTapAccounts:" destination="Z6t-4t-ibZ" id="gCI-IV-U2t"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cik-V5-Zod" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

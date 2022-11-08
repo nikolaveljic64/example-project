@@ -16,9 +16,15 @@ class AccountManager {
     var selectedAccount : Account?
     
     
-    private init() {
+    private init() { }
+    
+    func onStart() {
         /// Load accounts on oppening screen
         self.accounts = dammyAccounts
+        
+        
+        // Get from Database or something
+        self.selectedAccount = self.accounts.first
     }
     
 }

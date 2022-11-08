@@ -4,6 +4,6 @@
 
 import Foundation
 
-protocol ActionVCProtocol: AnyObject {
+protocol AccountVCProtocol: AnyObject {
     func didSelect(_ account: Account)
 }
