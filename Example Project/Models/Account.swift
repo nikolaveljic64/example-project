@@ -10,10 +10,11 @@ import Foundation
 
 struct Account {
     var name: String!
+    var id: Int!
 }
 
 
-var dammyAccounts = [Account(name: "One"),
-                     Account(name: "Two"),
-                     Account(name: "Three"),
-                     Account(name: "Four")]
+var dammyAccounts = [Account(name: "One",id: 1),
+                     Account(name: "Two",id: 2),
+                     Account(name: "Three",id: 3),
+                     Account(name: "Four",id: 4)]

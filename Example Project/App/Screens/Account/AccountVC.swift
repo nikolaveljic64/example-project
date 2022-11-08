@@ -76,9 +76,12 @@ extension AccountVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.didSelect(accounts[indexPath.row])
         AccountManager.shared.selectedAccount = accounts[indexPath.row]
+      
+        delegate?.didSelect(accounts[indexPath.row])
+        
         tableView.reloadData()
+        
         dismiss(animated: true, completion: nil)
     }
 }

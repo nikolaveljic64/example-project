@@ -41,6 +41,7 @@ class MainFeedVC: UIViewController {
 extension MainFeedVC: AccountVCProtocol {
     func didSelect(_ account: Account) {
         self.title = "Main Feed for \(account.name ?? "")"
+        self.feedVC.loadData()
     }
 }
 

@@ -31,6 +31,9 @@
                                 <state key="normal" title="Close">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapClose:" destination="XuX-uH-Hri" eventType="touchUpInside" id="ahS-xL-GPJ"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dgU-oY-Ss8">
                                 <rect key="frame" x="0.0" y="133.66666666666669" width="393" height="684.33333333333326"/>

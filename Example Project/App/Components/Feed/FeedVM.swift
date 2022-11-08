@@ -19,19 +19,26 @@ class FeedVM {
         // Example we can use multiple account
         // Based on that id we will get data
         // That data we will get from API
-                
+        
+        
+        
         var data: [Feed] = []
         
     
-        //dispatchGroup for waiting for all API to finish
+        // dispatchGroup for waiting for all API to finish
+        
+        // API different for ID
+        if AccountManager.shared.selectedAccount?.id == 1 {
+            // First Type
+            data.append(Feed(type: .cardType1, cardType1: arrayCardModel.first))
+        } else {
+            for item in arrayCardModel {
+                data.append(Feed(type: .cardType1, cardType1: item))
+            }
+           
+        }
         
         // This can be load from API
-        
-        // First Type // two count
-        for item in arrayCardModel {
-            data.append(Feed(type: .cardType1, cardType1: item))
-        }
-                
         // Secont Type
         // And other API which can load other cards but for different purpose
         data.append(Feed(type: .cardType2, cardType2: dammyCardModelOne))
