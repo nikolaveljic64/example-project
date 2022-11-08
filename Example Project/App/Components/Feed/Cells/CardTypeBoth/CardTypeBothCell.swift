@@ -34,9 +34,12 @@ class CardTypeBothCell: UITableViewCell {
         
         guard let item else { return }
         
+        titleLabel.text = item.title
+        item.active ? (statusLabel.text = "Active") : (statusLabel.text = "Not Active")
+        statusSwitch.isOn = item.active
+        
         iconImage.isHidden = type == .cardType2
         statusSwitch.isHidden = type == .cardType2
-        
         containerView.backgroundColor = (type == .cardType2) ? (.secondarySystemBackground) : (.systemBackground)
     }
 }

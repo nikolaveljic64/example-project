@@ -38,9 +38,8 @@ class FeedVM {
         
         
         // Both Types , some logic to separate those two card , maybe with field inside object or based on screen
-        data.append(Feed(type: .cardTypeBoth, cardType: dammyCardModelOne))
         data.append(Feed(type: .cardTypeBoth, cardType: dammyCardModelTwo))
-        
+     
         delegate.onSuccess(data: data, action: .getData)
         
     }

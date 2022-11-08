@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -60,9 +60,8 @@
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p2i-4F-6AL">
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="p2i-4F-6AL">
                                                         <rect key="frame" x="191" y="0.0" width="51" height="31"/>
-                                                        <color key="onTintColor" systemColor="opaqueSeparatorColor"/>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -95,6 +94,13 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="containerView" destination="iX1-sI-Fys" id="yH6-Rj-YXs"/>
+                <outlet property="iconImage" destination="rnp-e8-hSz" id="4hV-mx-6ap"/>
+                <outlet property="statusLabel" destination="D5O-M0-7NR" id="Sb3-rp-xkO"/>
+                <outlet property="statusSwitch" destination="p2i-4F-6AL" id="doR-rL-Ffx"/>
+                <outlet property="titleLabel" destination="Nqj-hV-kMp" id="WvC-Kt-XXL"/>
+            </connections>
             <point key="canvasLocation" x="-204" y="-35"/>
         </tableViewCell>
     </objects>

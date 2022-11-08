@@ -20,10 +20,11 @@ class Card2Cell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configCell(item: CardModel1?) {
+        guard let item else { return }
+        
+        self.titleLabel.text = item.title
+        item.active ? (statusLabel.text = "Active") : (statusLabel.text = "Not Active")
     }
     
 }

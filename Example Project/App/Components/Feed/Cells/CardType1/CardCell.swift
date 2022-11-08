@@ -11,15 +11,24 @@ class CardCell: UITableViewCell {
 
     static var cellIdentifier = "CardCell"
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var iconImage: UIImageView!
+    @IBOutlet weak var statusSwitch: UISwitch!
+    @IBOutlet weak var containerView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configCell(item: CardModel1?) {
+        guard let item else { return }
+        
+        self.titleLabel.text = item.title
+        item.active ? (statusLabel.text = "Active") : (statusLabel.text = "Not Active")
+        statusSwitch.isOn = item.active
+        
     }
     
 }

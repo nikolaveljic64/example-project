@@ -17,7 +17,7 @@ class AccountCell: UITableViewCell {
     func configCell(title: String?, _ selected : Bool) {
         
         checkImage.isHidden = !selected
-        titleLabel.textColor = selected ? .red : .black
+        titleLabel.textColor = selected ? .systemBlue : .systemGray
         titleLabel.text = title
         
     }

@@ -12,6 +12,7 @@
 		FD0DAE78291266C500F96448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0DAE77291266C500F96448 /* Assets.xcassets */; };
 		FD0DAE7B291266C500F96448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0DAE79291266C500F96448 /* LaunchScreen.storyboard */; };
 		FD0DAE83291267AA00F96448 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FD0DAE82291267AA00F96448 /* README.md */; };
+		FD521669291A7BEE00E8AAE5 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD521668291A7BEE00E8AAE5 /* Account.storyboard */; };
 		FD913343291944AF00605396 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD913342291944AF00605396 /* Feed.storyboard */; };
 		FD913345291944C700605396 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD913344291944C700605396 /* FeedVC.swift */; };
 		FD9133482919451800605396 /* FeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9133472919451800605396 /* FeedType.swift */; };
@@ -37,7 +38,6 @@
 		FD91339629195D3B00605396 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91339229195D3B00605396 /* AccountCell.swift */; };
 		FD91339729195D3B00605396 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91339329195D3B00605396 /* AccountVC.swift */; };
 		FD91339B29195D5300605396 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91339A29195D5300605396 /* Account.swift */; };
-		FD91339D29195E9000605396 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD91339C29195E9000605396 /* Account.storyboard */; };
 		FD91339F29195F4600605396 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91339E29195F4600605396 /* AccountManager.swift */; };
 		FD9133A2291A6D1200605396 /* MainFeedVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9133A1291A6D1200605396 /* MainFeedVM.swift */; };
 		FD9133A6291A6F1900605396 /* CardTypeBothCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9133A4291A6F1900605396 /* CardTypeBothCell.swift */; };
@@ -52,6 +52,7 @@
 		FD0DAE7A291266C500F96448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD0DAE7C291266C500F96448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD0DAE82291267AA00F96448 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		FD521668291A7BEE00E8AAE5 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Account.storyboard; path = Cell/Account.storyboard; sourceTree = "<group>"; };
 		FD913342291944AF00605396 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		FD913344291944C700605396 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		FD9133472919451800605396 /* FeedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedType.swift; sourceTree = "<group>"; };
@@ -77,7 +78,6 @@
 		FD91339229195D3B00605396 /* AccountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 		FD91339329195D3B00605396 /* AccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		FD91339A29195D5300605396 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		FD91339C29195E9000605396 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		FD91339E29195F4600605396 /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		FD9133A1291A6D1200605396 /* MainFeedVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedVM.swift; sourceTree = "<group>"; };
 		FD9133A4291A6F1900605396 /* CardTypeBothCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTypeBothCell.swift; sourceTree = "<group>"; };
@@ -249,10 +249,10 @@
 		FD91338C29195D0100605396 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				FD91339029195D3B00605396 /* AccountVCProtocol.swift */,
 				FD9133A029195FE500605396 /* Cell */,
 				FD91339329195D3B00605396 /* AccountVC.swift */,
-				FD91339C29195E9000605396 /* Account.storyboard */,
+				FD521668291A7BEE00E8AAE5 /* Account.storyboard */,
+				FD91339029195D3B00605396 /* AccountVCProtocol.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -338,12 +338,12 @@
 			files = (
 				FD0DAE7B291266C500F96448 /* LaunchScreen.storyboard in Resources */,
 				FD91336C291952C200605396 /* CardCell.xib in Resources */,
+				FD521669291A7BEE00E8AAE5 /* Account.storyboard in Resources */,
 				FD9133A7291A6F1900605396 /* CardTypeBothCell.xib in Resources */,
 				FD913343291944AF00605396 /* Feed.storyboard in Resources */,
 				FD0DAE78291266C500F96448 /* Assets.xcassets in Resources */,
 				FD913372291955CD00605396 /* Card2Cell.xib in Resources */,
 				FD0DAE83291267AA00F96448 /* README.md in Resources */,
-				FD91339D29195E9000605396 /* Account.storyboard in Resources */,
 				FD0DAE76291266C400F96448 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
