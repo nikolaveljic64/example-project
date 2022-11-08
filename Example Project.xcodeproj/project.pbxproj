@@ -21,13 +21,19 @@
 		FD521679291A807200E8AAE5 /* AccountFeedVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD521678291A807200E8AAE5 /* AccountFeedVM.swift */; };
 		FD52167C291A81DE00E8AAE5 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52167A291A81DE00E8AAE5 /* AccountCell.swift */; };
 		FD52167D291A81DE00E8AAE5 /* AccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD52167B291A81DE00E8AAE5 /* AccountCell.xib */; };
+		FD521681291A946D00E8AAE5 /* CardCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD521680291A946D00E8AAE5 /* CardCollectionVC.swift */; };
+		FD521683291A95F900E8AAE5 /* CardCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD521682291A95F900E8AAE5 /* CardCollection.storyboard */; };
+		FD521687291A971A00E8AAE5 /* CardCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD521686291A971A00E8AAE5 /* CardCollectionVC.swift */; };
+		FD521689291A983200E8AAE5 /* CardCollectionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD521688291A983200E8AAE5 /* CardCollectionVM.swift */; };
+		FD52168C291A99B500E8AAE5 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52168A291A99B500E8AAE5 /* CardCollectionViewCell.swift */; };
+		FD52168D291A99B500E8AAE5 /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD52168B291A99B500E8AAE5 /* CardCollectionViewCell.xib */; };
 		FD913343291944AF00605396 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD913342291944AF00605396 /* Feed.storyboard */; };
 		FD913345291944C700605396 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD913344291944C700605396 /* FeedVC.swift */; };
 		FD9133482919451800605396 /* FeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9133472919451800605396 /* FeedType.swift */; };
 		FD91334A2919454700605396 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9133492919454700605396 /* Feed.swift */; };
 		FD91334C2919456600605396 /* FeedDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91334B2919456600605396 /* FeedDataType.swift */; };
 		FD91335E29194FE500605396 /* MainFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91335D29194FE500605396 /* MainFeedVC.swift */; };
-		FD9133632919524900605396 /* CardModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9133622919524900605396 /* CardModel1.swift */; };
+		FD9133632919524900605396 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9133622919524900605396 /* CardModel.swift */; };
 		FD91336B291952C200605396 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD913369291952C200605396 /* CardCell.swift */; };
 		FD91336C291952C200605396 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD91336A291952C200605396 /* CardCell.xib */; };
 		FD913371291955CD00605396 /* Card2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91336F291955CD00605396 /* Card2Cell.swift */; };
@@ -68,13 +74,19 @@
 		FD521678291A807200E8AAE5 /* AccountFeedVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountFeedVM.swift; sourceTree = "<group>"; };
 		FD52167A291A81DE00E8AAE5 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 		FD52167B291A81DE00E8AAE5 /* AccountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountCell.xib; sourceTree = "<group>"; };
+		FD521680291A946D00E8AAE5 /* CardCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionVC.swift; sourceTree = "<group>"; };
+		FD521682291A95F900E8AAE5 /* CardCollection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardCollection.storyboard; sourceTree = "<group>"; };
+		FD521686291A971A00E8AAE5 /* CardCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionVC.swift; sourceTree = "<group>"; };
+		FD521688291A983200E8AAE5 /* CardCollectionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionVM.swift; sourceTree = "<group>"; };
+		FD52168A291A99B500E8AAE5 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		FD52168B291A99B500E8AAE5 /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
 		FD913342291944AF00605396 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		FD913344291944C700605396 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		FD9133472919451800605396 /* FeedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedType.swift; sourceTree = "<group>"; };
 		FD9133492919454700605396 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		FD91334B2919456600605396 /* FeedDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataType.swift; sourceTree = "<group>"; };
 		FD91335D29194FE500605396 /* MainFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedVC.swift; sourceTree = "<group>"; };
-		FD9133622919524900605396 /* CardModel1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel1.swift; sourceTree = "<group>"; };
+		FD9133622919524900605396 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		FD913369291952C200605396 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		FD91336A291952C200605396 /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
 		FD91336F291955CD00605396 /* Card2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card2Cell.swift; sourceTree = "<group>"; };
@@ -162,14 +174,52 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		FD91332A2919399D00605396 /* MainFeed */ = {
+		FD52167E291A943800E8AAE5 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				FD521685291A970F00E8AAE5 /* Models */,
+				FD521684291A968600E8AAE5 /* Cells */,
+				FD521680291A946D00E8AAE5 /* CardCollectionVC.swift */,
+				FD521688291A983200E8AAE5 /* CardCollectionVM.swift */,
+				FD521682291A95F900E8AAE5 /* CardCollection.storyboard */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		FD52167F291A943E00E8AAE5 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				FD52166C291A7E7300E8AAE5 /* Account Feed */,
+				FD91332B29193B7B00605396 /* Feed */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		FD521684291A968600E8AAE5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FD52168A291A99B500E8AAE5 /* CardCollectionViewCell.swift */,
+				FD52168B291A99B500E8AAE5 /* CardCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FD521685291A970F00E8AAE5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD521686291A971A00E8AAE5 /* CardCollectionVC.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FD91332A2919399D00605396 /* Main Feed */ = {
 			isa = PBXGroup;
 			children = (
 				FD0DAE74291266C400F96448 /* Main.storyboard */,
 				FD91335D29194FE500605396 /* MainFeedVC.swift */,
 				FD9133A1291A6D1200605396 /* MainFeedVM.swift */,
 			);
-			path = MainFeed;
+			path = "Main Feed";
 			sourceTree = "<group>";
 		};
 		FD91332B29193B7B00605396 /* Feed */ = {
@@ -197,8 +247,8 @@
 		FD91335F2919509800605396 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				FD52166C291A7E7300E8AAE5 /* Account Feed */,
-				FD91332B29193B7B00605396 /* Feed */,
+				FD52167F291A943E00E8AAE5 /* Feed */,
+				FD52167E291A943800E8AAE5 /* Collection */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -207,7 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				FD91338C29195D0100605396 /* Account */,
-				FD91332A2919399D00605396 /* MainFeed */,
+				FD91332A2919399D00605396 /* Main Feed */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -216,7 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				FD91339A29195D5300605396 /* Account.swift */,
-				FD9133622919524900605396 /* CardModel1.swift */,
+				FD9133622919524900605396 /* CardModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -377,6 +427,8 @@
 				FD91336C291952C200605396 /* CardCell.xib in Resources */,
 				FD9133A7291A6F1900605396 /* CardTypeBothCell.xib in Resources */,
 				FD913343291944AF00605396 /* Feed.storyboard in Resources */,
+				FD52168D291A99B500E8AAE5 /* CardCollectionViewCell.xib in Resources */,
+				FD521683291A95F900E8AAE5 /* CardCollection.storyboard in Resources */,
 				FD0DAE78291266C500F96448 /* Assets.xcassets in Resources */,
 				FD521670291A7F2B00E8AAE5 /* AccountFeedVC.storyboard in Resources */,
 				FD52167D291A81DE00E8AAE5 /* AccountCell.xib in Resources */,
@@ -401,8 +453,10 @@
 				FD521677291A801400E8AAE5 /* AccountFeed.swift in Sources */,
 				FD913345291944C700605396 /* FeedVC.swift in Sources */,
 				FD91335E29194FE500605396 /* MainFeedVC.swift in Sources */,
+				FD521687291A971A00E8AAE5 /* CardCollectionVC.swift in Sources */,
 				FD91338A29195CC500605396 /* BottomPopupTransitionHandler.swift in Sources */,
 				FD913371291955CD00605396 /* Card2Cell.swift in Sources */,
+				FD521689291A983200E8AAE5 /* CardCollectionVM.swift in Sources */,
 				FD9133762919572800605396 /* FeedVM.swift in Sources */,
 				FD91338629195CC500605396 /* BottomPopupDismissInteractionController.swift in Sources */,
 				FD91338429195CC500605396 /* BottomPopupUtils.swift in Sources */,
@@ -413,9 +467,10 @@
 				FD91336B291952C200605396 /* CardCell.swift in Sources */,
 				FD9133792919578800605396 /* Helpers.swift in Sources */,
 				FD52167C291A81DE00E8AAE5 /* AccountCell.swift in Sources */,
+				FD521681291A946D00E8AAE5 /* CardCollectionVC.swift in Sources */,
 				FD91334C2919456600605396 /* FeedDataType.swift in Sources */,
 				FD521672291A7FCE00E8AAE5 /* AccountFeedType.swift in Sources */,
-				FD9133632919524900605396 /* CardModel1.swift in Sources */,
+				FD9133632919524900605396 /* CardModel.swift in Sources */,
 				FD9133A6291A6F1900605396 /* CardTypeBothCell.swift in Sources */,
 				FD521675291A7FF500E8AAE5 /* AccountFeedDataType.swift in Sources */,
 				FD91339B29195D5300605396 /* Account.swift in Sources */,
@@ -424,6 +479,7 @@
 				FD0DAE6F291266C400F96448 /* AppDelegate.swift in Sources */,
 				FD91338929195CC500605396 /* BottomPopupPresentAnimator.swift in Sources */,
 				FD521679291A807200E8AAE5 /* AccountFeedVM.swift in Sources */,
+				FD52168C291A99B500E8AAE5 /* CardCollectionViewCell.swift in Sources */,
 				FD9133482919451800605396 /* FeedType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

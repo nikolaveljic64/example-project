@@ -15,6 +15,4 @@ struct Account {
 
 
 var dammyAccounts = [Account(name: "One",id: 1),
-                     Account(name: "Two",id: 2),
-                     Account(name: "Three",id: 3),
-                     Account(name: "Four",id: 4)]
+                     Account(name: "Two",id: 2)]

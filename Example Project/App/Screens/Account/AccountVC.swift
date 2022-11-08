@@ -63,7 +63,7 @@ class AccountVC: BottomPopupViewController {
 
 extension AccountVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: AccountCell.cellIdentifier, for: indexPath) as? AccountCell else { fatalError() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: AccountCell.cellIdentifier, for: indexPath) as? AccountCell else { return UITableViewCell() }
         
         cell.configCell(title:  accounts[indexPath.row].name, selectedAccount?.name ==  accounts[indexPath.row].name)
         

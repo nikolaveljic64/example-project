@@ -20,7 +20,7 @@ class FeedVM {
         // Based on that id we will get data
         // That data we will get from API
         
-        
+
         
         var data: [Feed] = []
         
