@@ -14,10 +14,21 @@ protocol VCProtocol: AnyObject {
     func onError(error: Error, action: Action?)
 }
 
-
 enum Action {
     case getData
 }
+
+
+protocol CellProtocol: AnyObject {
+    func didSelect(indexPath: IndexPath?, action: CellAction?, data: Any?)
+    func scrollTo(indexPath: IndexPath?)
+}
+
+
+enum CellAction {
+    case toogleStatus
+}
+
 
 // MARK: - Nib init
 extension UIView {

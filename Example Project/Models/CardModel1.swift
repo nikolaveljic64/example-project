@@ -15,6 +15,7 @@ struct CardModel1 {
 
 var dammyCardModelOne = CardModel1(title: "Title 5", description: "Description 5", active: false)
 var dammyCardModelTwo = CardModel1(title: "Title 6", description: "Description 6", active: false)
+var dammyCardModelThree = CardModel1(title: "Title 7", description: "Description 8", active: false)
 
 
 var arrayCardModel = [ CardModel1(title: "Title 1", description: "Description 1", active: false),

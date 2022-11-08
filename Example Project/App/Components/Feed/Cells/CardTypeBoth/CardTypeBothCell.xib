@@ -62,6 +62,9 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jdX-eq-jg1">
                                                         <rect key="frame" x="312.66666666666663" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="didTapStatusSwitch:" destination="GAQ-KV-Bx8" eventType="valueChanged" id="ZyQ-59-fdF"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>

@@ -53,17 +53,22 @@ extension FeedVC: UITableViewDelegate, UITableViewDataSource {
         case .cardType1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: CardCell.cellIdentifier, for: indexPath) as? CardCell {
                 cell.configCell(item: data[indexPath.row].cardType1)
+                cell.delegate = self
+                cell.indexPath = indexPath
                 return cell
             }
         case .cardType2:
             if let cell = tableView.dequeueReusableCell(withIdentifier: Card2Cell.cellIdentifier, for: indexPath) as? Card2Cell {
                 cell.configCell(item: data[indexPath.row].cardType2)
+                cell.delegate = self
                 return cell
             }
         case .cardTypeBoth:
             
             if let cell = tableView.dequeueReusableCell(withIdentifier: CardTypeBothCell.cellIdentifier, for: indexPath) as? CardTypeBothCell {
                 cell.configCell(item: data[indexPath.row].cardType)
+                cell.delegate = self
+                cell.indexPath = indexPath
                 return cell
             }
             
@@ -76,13 +81,45 @@ extension FeedVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch data[indexPath.row].type {
         case .cardType1:
-           break
+            break
         case .cardType2:
-           break
+            break
         case .cardTypeBoth:
-           break
+            break
         default: break
         }
+    }
+    
+}
+
+extension FeedVC: CellProtocol {
+    
+    func didSelect(indexPath: IndexPath?, action: CellAction?, data: Any?) {
+        switch action {
+        case .toogleStatus:
+            guard let indexPath else { return }
+            
+            switch self.data[indexPath.row].type {
+            case .cardType1:
+                self.data[indexPath.row].cardType1?.active.toggle()
+            case .cardTypeBoth:
+                // To pass data
+                if let cardType = data as? CardModel1 {
+                    self.data[indexPath.row].cardType = cardType
+                }
+           
+            default: break
+            }
+            
+            self.tableView.reloadRows(at: [indexPath], with: .automatic)
+            
+            
+        default: break
+        }
+    }
+    
+    func scrollTo(indexPath: IndexPath?) {
+        
     }
     
 }

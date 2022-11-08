@@ -23,6 +23,12 @@ class CardTypeBothCell: UITableViewCell {
     @IBOutlet weak var statusSwitch: UISwitch!
     @IBOutlet weak var containerView: UIView!
     
+    weak var delegate: CellProtocol!
+    var indexPath: IndexPath?
+    var item: CardModel1?
+    
+    private var type: CellType = .cardType2
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -31,15 +37,29 @@ class CardTypeBothCell: UITableViewCell {
     
     
     func configCell(item: CardModel1?, type: CellType = .cardType2) {
-        
+        self.item = item
+       
         guard let item else { return }
+        
+        // Example
+        if item.description == "Description 8" {
+            self.type = .cardType1
+        }
         
         titleLabel.text = item.title
         item.active ? (statusLabel.text = "Active") : (statusLabel.text = "Not Active")
         statusSwitch.isOn = item.active
         
-        iconImage.isHidden = type == .cardType2
-        statusSwitch.isHidden = type == .cardType2
-        containerView.backgroundColor = (type == .cardType2) ? (.secondarySystemBackground) : (.systemBackground)
+        iconImage.isHidden = self.type == .cardType2
+        statusSwitch.isHidden = self.type == .cardType2
+        containerView.backgroundColor = (self.type == .cardType2) ? (.secondarySystemBackground) : (.opaqueSeparator)
     }
+    
+    @IBAction func didTapStatusSwitch(_ sender: UISwitch) {
+        /// Example where we need to Pass Data , maybe textfield or something
+        self.item?.active.toggle()
+        
+        delegate.didSelect(indexPath: indexPath, action: .toogleStatus, data: item)
+    }
+    
 }

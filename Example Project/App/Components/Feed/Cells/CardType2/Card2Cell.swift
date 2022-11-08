@@ -15,6 +15,8 @@ class Card2Cell: UITableViewCell {
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var containerView: UIView!
     
+    weak var delegate: CellProtocol!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -26,5 +28,7 @@ class Card2Cell: UITableViewCell {
         self.titleLabel.text = item.title
         item.active ? (statusLabel.text = "Active") : (statusLabel.text = "Not Active")
     }
+    
+    
     
 }
