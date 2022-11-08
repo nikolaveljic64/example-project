@@ -19,6 +19,8 @@
 		FD521675291A7FF500E8AAE5 /* AccountFeedDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD521674291A7FF500E8AAE5 /* AccountFeedDataType.swift */; };
 		FD521677291A801400E8AAE5 /* AccountFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD521676291A801400E8AAE5 /* AccountFeed.swift */; };
 		FD521679291A807200E8AAE5 /* AccountFeedVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD521678291A807200E8AAE5 /* AccountFeedVM.swift */; };
+		FD52167C291A81DE00E8AAE5 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52167A291A81DE00E8AAE5 /* AccountCell.swift */; };
+		FD52167D291A81DE00E8AAE5 /* AccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD52167B291A81DE00E8AAE5 /* AccountCell.xib */; };
 		FD913343291944AF00605396 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD913342291944AF00605396 /* Feed.storyboard */; };
 		FD913345291944C700605396 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD913344291944C700605396 /* FeedVC.swift */; };
 		FD9133482919451800605396 /* FeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9133472919451800605396 /* FeedType.swift */; };
@@ -41,7 +43,6 @@
 		FD91338A29195CC500605396 /* BottomPopupTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91338229195CC500605396 /* BottomPopupTransitionHandler.swift */; };
 		FD91338B29195CC500605396 /* BottomPopupPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91338329195CC500605396 /* BottomPopupPresentationController.swift */; };
 		FD91339529195D3B00605396 /* AccountVCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91339029195D3B00605396 /* AccountVCProtocol.swift */; };
-		FD91339629195D3B00605396 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91339229195D3B00605396 /* AccountCell.swift */; };
 		FD91339729195D3B00605396 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91339329195D3B00605396 /* AccountVC.swift */; };
 		FD91339B29195D5300605396 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91339A29195D5300605396 /* Account.swift */; };
 		FD91339F29195F4600605396 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91339E29195F4600605396 /* AccountManager.swift */; };
@@ -65,6 +66,8 @@
 		FD521674291A7FF500E8AAE5 /* AccountFeedDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountFeedDataType.swift; sourceTree = "<group>"; };
 		FD521676291A801400E8AAE5 /* AccountFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountFeed.swift; sourceTree = "<group>"; };
 		FD521678291A807200E8AAE5 /* AccountFeedVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountFeedVM.swift; sourceTree = "<group>"; };
+		FD52167A291A81DE00E8AAE5 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
+		FD52167B291A81DE00E8AAE5 /* AccountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountCell.xib; sourceTree = "<group>"; };
 		FD913342291944AF00605396 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		FD913344291944C700605396 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		FD9133472919451800605396 /* FeedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedType.swift; sourceTree = "<group>"; };
@@ -87,7 +90,6 @@
 		FD91338229195CC500605396 /* BottomPopupTransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupTransitionHandler.swift; sourceTree = "<group>"; };
 		FD91338329195CC500605396 /* BottomPopupPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentationController.swift; sourceTree = "<group>"; };
 		FD91339029195D3B00605396 /* AccountVCProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountVCProtocol.swift; sourceTree = "<group>"; };
-		FD91339229195D3B00605396 /* AccountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 		FD91339329195D3B00605396 /* AccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		FD91339A29195D5300605396 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		FD91339E29195F4600605396 /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
@@ -294,7 +296,8 @@
 		FD9133A029195FE500605396 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				FD91339229195D3B00605396 /* AccountCell.swift */,
+				FD52167A291A81DE00E8AAE5 /* AccountCell.swift */,
+				FD52167B291A81DE00E8AAE5 /* AccountCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				FD913343291944AF00605396 /* Feed.storyboard in Resources */,
 				FD0DAE78291266C500F96448 /* Assets.xcassets in Resources */,
 				FD521670291A7F2B00E8AAE5 /* AccountFeedVC.storyboard in Resources */,
+				FD52167D291A81DE00E8AAE5 /* AccountCell.xib in Resources */,
 				FD913372291955CD00605396 /* Card2Cell.xib in Resources */,
 				FD0DAE83291267AA00F96448 /* README.md in Resources */,
 				FD52166B291A7C4A00E8AAE5 /* Account.storyboard in Resources */,
@@ -390,7 +394,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD91339629195D3B00605396 /* AccountCell.swift in Sources */,
 				FD91338529195CC500605396 /* BottomPopupViewController.swift in Sources */,
 				FD91339529195D3B00605396 /* AccountVCProtocol.swift in Sources */,
 				FD91339729195D3B00605396 /* AccountVC.swift in Sources */,
@@ -409,6 +412,7 @@
 				FD91339F29195F4600605396 /* AccountManager.swift in Sources */,
 				FD91336B291952C200605396 /* CardCell.swift in Sources */,
 				FD9133792919578800605396 /* Helpers.swift in Sources */,
+				FD52167C291A81DE00E8AAE5 /* AccountCell.swift in Sources */,
 				FD91334C2919456600605396 /* FeedDataType.swift in Sources */,
 				FD521672291A7FCE00E8AAE5 /* AccountFeedType.swift in Sources */,
 				FD9133632919524900605396 /* CardModel1.swift in Sources */,

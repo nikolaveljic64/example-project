@@ -1,4 +1,9 @@
-
+//
+//  AccountCell.swift
+//  Example Project
+//
+//  Created by Nikola Veljic on 8.11.22..
+//
 
 import UIKit
 

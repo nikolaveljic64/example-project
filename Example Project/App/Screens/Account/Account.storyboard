@@ -35,41 +35,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dgU-oY-Ss8">
                                 <rect key="frame" x="0.0" y="133.66666666666669" width="393" height="684.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountCell" rowHeight="75" id="FQV-xa-Klh" customClass="AccountCell" customModule="Example_Project" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="75"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FQV-xa-Klh" id="A9k-h8-RWY">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="75"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4d-uf-H86">
-                                                    <rect key="frame" x="177.33333333333334" y="28.666666666666671" width="38.333333333333343" height="18"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GnL-KD-ffk">
-                                                    <rect key="frame" x="362" y="34.333333333333329" width="11" height="7"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="11" id="4pm-T7-agI"/>
-                                                        <constraint firstAttribute="height" constant="11" id="OkB-Yg-Rq7"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="GnL-KD-ffk" secondAttribute="trailing" constant="20" id="0Rp-sY-J4o"/>
-                                                <constraint firstItem="GnL-KD-ffk" firstAttribute="centerY" secondItem="j4d-uf-H86" secondAttribute="centerY" id="4sA-8O-ade"/>
-                                                <constraint firstItem="j4d-uf-H86" firstAttribute="centerX" secondItem="A9k-h8-RWY" secondAttribute="centerX" id="aZR-99-efc"/>
-                                                <constraint firstItem="j4d-uf-H86" firstAttribute="centerY" secondItem="A9k-h8-RWY" secondAttribute="centerY" id="d50-Gk-7Mf"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="checkImage" destination="GnL-KD-ffk" id="Q6y-IZ-8gb"/>
-                                            <outlet property="titleLabel" destination="j4d-uf-H86" id="IUd-ct-Zob"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f8e-iV-kW3">
                                 <rect key="frame" x="20" y="133" width="353" height="0.66666666666665719"/>
@@ -106,7 +71,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="checkmark" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

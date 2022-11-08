@@ -24,7 +24,7 @@ class AccountVC: BottomPopupViewController {
         tableView.dataSource = self
         tableView.separatorInset = .init(top: 0, left: 20, bottom: 0, right: 20)
         tableView.separatorColor = #colorLiteral(red: 0.8352941176, green: 0.8352941176, blue: 0.8352941176, alpha: 1)
-        
+        tableView.register(AccountCell.nib, forCellReuseIdentifier: AccountCell.cellIdentifier)
         // This
         accounts = AccountManager.shared.accounts
        
