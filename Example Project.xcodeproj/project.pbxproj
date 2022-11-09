@@ -66,8 +66,6 @@
 		FDB3E8AE291BBFC700722C81 /* BannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB3E8AC291BBFC700722C81 /* BannerCollectionViewCell.xib */; };
 		FDB3E8B0291BCDBA00722C81 /* BannerCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB3E8AF291BCDBA00722C81 /* BannerCellProtocol.swift */; };
 		FDB3E8B3291BD51100722C81 /* CardDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB3E8B2291BD51100722C81 /* CardDetails.storyboard */; };
-		FDB3E8B6291BDD0B00722C81 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB3E8B5291BDD0B00722C81 /* HomeTabBarController.swift */; };
-		FDB3E8B8291BDD1E00722C81 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB3E8B7291BDD1E00722C81 /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,8 +130,6 @@
 		FDB3E8AC291BBFC700722C81 /* BannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCollectionViewCell.xib; sourceTree = "<group>"; };
 		FDB3E8AF291BCDBA00722C81 /* BannerCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCellProtocol.swift; sourceTree = "<group>"; };
 		FDB3E8B2291BD51100722C81 /* CardDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardDetails.storyboard; sourceTree = "<group>"; };
-		FDB3E8B5291BDD0B00722C81 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
-		FDB3E8B7291BDD1E00722C81 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,7 +287,6 @@
 		FD913360291950A300605396 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				FDB3E8B4291BDCDB00722C81 /* Home */,
 				FDB3E8B1291BD4FE00722C81 /* Card Details Screen */,
 				FDB3E8A5291BBA8200722C81 /* Banner Screen */,
 				FD91338C29195D0100605396 /* Account Screen */,
@@ -439,15 +434,6 @@
 			path = "Card Details Screen";
 			sourceTree = "<group>";
 		};
-		FDB3E8B4291BDCDB00722C81 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				FDB3E8B5291BDD0B00722C81 /* HomeTabBarController.swift */,
-				FDB3E8B7291BDD1E00722C81 /* Home.storyboard */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -525,7 +511,6 @@
 				FD521694291AA22C00E8AAE5 /* CardWidget.xib in Resources */,
 				FDB3E8B3291BD51100722C81 /* CardDetails.storyboard in Resources */,
 				FD52166B291A7C4A00E8AAE5 /* Account.storyboard in Resources */,
-				FDB3E8B8291BDD1E00722C81 /* Home.storyboard in Resources */,
 				FDB3E8A9291BBB4600722C81 /* Banner.storyboard in Resources */,
 				FDB3E8AE291BBFC700722C81 /* BannerCollectionViewCell.xib in Resources */,
 				FD0DAE76291266C400F96448 /* Main.storyboard in Resources */,
@@ -541,7 +526,6 @@
 			files = (
 				FD91338529195CC500605396 /* BottomPopupViewController.swift in Sources */,
 				FD91339529195D3B00605396 /* AccountVCProtocol.swift in Sources */,
-				FDB3E8B6291BDD0B00722C81 /* HomeTabBarController.swift in Sources */,
 				FD91339729195D3B00605396 /* AccountVC.swift in Sources */,
 				FD91334A2919454700605396 /* Feed.swift in Sources */,
 				FDB3E8B0291BCDBA00722C81 /* BannerCellProtocol.swift in Sources */,
