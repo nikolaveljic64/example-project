@@ -27,6 +27,9 @@ protocol CellProtocol: AnyObject {
 
 enum CellAction {
     case toogleStatus
+    case seeAll
+    case removeBanner
+    case hideBanner
 }
 
 

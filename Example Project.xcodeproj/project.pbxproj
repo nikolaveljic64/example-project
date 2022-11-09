@@ -57,6 +57,14 @@
 		FD9133A2291A6D1200605396 /* MainFeedVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9133A1291A6D1200605396 /* MainFeedVM.swift */; };
 		FD9133A6291A6F1900605396 /* CardTypeBothCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9133A4291A6F1900605396 /* CardTypeBothCell.swift */; };
 		FD9133A7291A6F1900605396 /* CardTypeBothCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD9133A5291A6F1900605396 /* CardTypeBothCell.xib */; };
+		FDB3E89F291BAFEE00722C81 /* BannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB3E89E291BAFEE00722C81 /* BannerModel.swift */; };
+		FDB3E8A3291BB21F00722C81 /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB3E8A1291BB21F00722C81 /* BannerCell.swift */; };
+		FDB3E8A4291BB21F00722C81 /* BannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB3E8A2291BB21F00722C81 /* BannerCell.xib */; };
+		FDB3E8A7291BBB3700722C81 /* BannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB3E8A6291BBB3700722C81 /* BannerVC.swift */; };
+		FDB3E8A9291BBB4600722C81 /* Banner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB3E8A8291BBB4600722C81 /* Banner.storyboard */; };
+		FDB3E8AD291BBFC700722C81 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB3E8AB291BBFC700722C81 /* BannerCollectionViewCell.swift */; };
+		FDB3E8AE291BBFC700722C81 /* BannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB3E8AC291BBFC700722C81 /* BannerCollectionViewCell.xib */; };
+		FDB3E8B0291BCDBA00722C81 /* BannerCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB3E8AF291BCDBA00722C81 /* BannerCellProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +120,14 @@
 		FD9133A1291A6D1200605396 /* MainFeedVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedVM.swift; sourceTree = "<group>"; };
 		FD9133A4291A6F1900605396 /* CardTypeBothCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTypeBothCell.swift; sourceTree = "<group>"; };
 		FD9133A5291A6F1900605396 /* CardTypeBothCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTypeBothCell.xib; sourceTree = "<group>"; };
+		FDB3E89E291BAFEE00722C81 /* BannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerModel.swift; sourceTree = "<group>"; };
+		FDB3E8A1291BB21F00722C81 /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
+		FDB3E8A2291BB21F00722C81 /* BannerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCell.xib; sourceTree = "<group>"; };
+		FDB3E8A6291BBB3700722C81 /* BannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerVC.swift; sourceTree = "<group>"; };
+		FDB3E8A8291BBB4600722C81 /* Banner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Banner.storyboard; sourceTree = "<group>"; };
+		FDB3E8AB291BBFC700722C81 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		FDB3E8AC291BBFC700722C81 /* BannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCollectionViewCell.xib; sourceTree = "<group>"; };
+		FDB3E8AF291BCDBA00722C81 /* BannerCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCellProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,14 +241,14 @@
 			path = "Card Widget";
 			sourceTree = "<group>";
 		};
-		FD91332A2919399D00605396 /* Main Feed */ = {
+		FD91332A2919399D00605396 /* Main Feed Screen */ = {
 			isa = PBXGroup;
 			children = (
 				FD0DAE74291266C400F96448 /* Main.storyboard */,
 				FD91335D29194FE500605396 /* MainFeedVC.swift */,
 				FD9133A1291A6D1200605396 /* MainFeedVM.swift */,
 			);
-			path = "Main Feed";
+			path = "Main Feed Screen";
 			sourceTree = "<group>";
 		};
 		FD91332B29193B7B00605396 /* Feed */ = {
@@ -269,8 +285,9 @@
 		FD913360291950A300605396 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				FD91338C29195D0100605396 /* Account */,
-				FD91332A2919399D00605396 /* Main Feed */,
+				FDB3E8A5291BBA8200722C81 /* Banner Screen */,
+				FD91338C29195D0100605396 /* Account Screen */,
+				FD91332A2919399D00605396 /* Main Feed Screen */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -280,6 +297,7 @@
 			children = (
 				FD91339A29195D5300605396 /* Account.swift */,
 				FD9133622919524900605396 /* CardModel.swift */,
+				FDB3E89E291BAFEE00722C81 /* BannerModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -287,6 +305,7 @@
 		FD9133682919529300605396 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				FDB3E8A0291BB21200722C81 /* Banner */,
 				FD521690291AA1FB00E8AAE5 /* Card Widget */,
 				FD9133A3291A6F0500605396 /* CardTypeBoth */,
 				FD91336E2919555000605396 /* CardType2 */,
@@ -346,7 +365,7 @@
 			path = "Bottom Sheet";
 			sourceTree = "<group>";
 		};
-		FD91338C29195D0100605396 /* Account */ = {
+		FD91338C29195D0100605396 /* Account Screen */ = {
 			isa = PBXGroup;
 			children = (
 				FD9133A029195FE500605396 /* Cell */,
@@ -354,7 +373,7 @@
 				FD91339329195D3B00605396 /* AccountVC.swift */,
 				FD91339029195D3B00605396 /* AccountVCProtocol.swift */,
 			);
-			path = Account;
+			path = "Account Screen";
 			sourceTree = "<group>";
 		};
 		FD9133A029195FE500605396 /* Cell */ = {
@@ -373,6 +392,35 @@
 				FD9133A5291A6F1900605396 /* CardTypeBothCell.xib */,
 			);
 			path = CardTypeBoth;
+			sourceTree = "<group>";
+		};
+		FDB3E8A0291BB21200722C81 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				FDB3E8A1291BB21F00722C81 /* BannerCell.swift */,
+				FDB3E8A2291BB21F00722C81 /* BannerCell.xib */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		FDB3E8A5291BBA8200722C81 /* Banner Screen */ = {
+			isa = PBXGroup;
+			children = (
+				FDB3E8AA291BBFAE00722C81 /* Cells */,
+				FDB3E8A6291BBB3700722C81 /* BannerVC.swift */,
+				FDB3E8A8291BBB4600722C81 /* Banner.storyboard */,
+				FDB3E8AF291BCDBA00722C81 /* BannerCellProtocol.swift */,
+			);
+			path = "Banner Screen";
+			sourceTree = "<group>";
+		};
+		FDB3E8AA291BBFAE00722C81 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FDB3E8AB291BBFC700722C81 /* BannerCollectionViewCell.swift */,
+				FDB3E8AC291BBFC700722C81 /* BannerCollectionViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,6 +489,7 @@
 				FD91336C291952C200605396 /* CardCell.xib in Resources */,
 				FD9133A7291A6F1900605396 /* CardTypeBothCell.xib in Resources */,
 				FD913343291944AF00605396 /* Feed.storyboard in Resources */,
+				FDB3E8A4291BB21F00722C81 /* BannerCell.xib in Resources */,
 				FD52168D291A99B500E8AAE5 /* CardCollectionViewCell.xib in Resources */,
 				FD521683291A95F900E8AAE5 /* CardCollection.storyboard in Resources */,
 				FD0DAE78291266C500F96448 /* Assets.xcassets in Resources */,
@@ -450,6 +499,8 @@
 				FD0DAE83291267AA00F96448 /* README.md in Resources */,
 				FD521694291AA22C00E8AAE5 /* CardWidget.xib in Resources */,
 				FD52166B291A7C4A00E8AAE5 /* Account.storyboard in Resources */,
+				FDB3E8A9291BBB4600722C81 /* Banner.storyboard in Resources */,
+				FDB3E8AE291BBFC700722C81 /* BannerCollectionViewCell.xib in Resources */,
 				FD0DAE76291266C400F96448 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,7 +516,9 @@
 				FD91339529195D3B00605396 /* AccountVCProtocol.swift in Sources */,
 				FD91339729195D3B00605396 /* AccountVC.swift in Sources */,
 				FD91334A2919454700605396 /* Feed.swift in Sources */,
+				FDB3E8B0291BCDBA00722C81 /* BannerCellProtocol.swift in Sources */,
 				FD521677291A801400E8AAE5 /* AccountFeed.swift in Sources */,
+				FDB3E8A3291BB21F00722C81 /* BannerCell.swift in Sources */,
 				FD913345291944C700605396 /* FeedVC.swift in Sources */,
 				FD91335E29194FE500605396 /* MainFeedVC.swift in Sources */,
 				FD91338A29195CC500605396 /* BottomPopupTransitionHandler.swift in Sources */,
@@ -487,15 +540,18 @@
 				FD521672291A7FCE00E8AAE5 /* AccountFeedType.swift in Sources */,
 				FD9133632919524900605396 /* CardModel.swift in Sources */,
 				FD9133A6291A6F1900605396 /* CardTypeBothCell.swift in Sources */,
+				FDB3E89F291BAFEE00722C81 /* BannerModel.swift in Sources */,
 				FD521675291A7FF500E8AAE5 /* AccountFeedDataType.swift in Sources */,
 				FD91339B29195D5300605396 /* Account.swift in Sources */,
 				FD9133A2291A6D1200605396 /* MainFeedVM.swift in Sources */,
 				FD91338729195CC500605396 /* BottomPopupNavigationController.swift in Sources */,
 				FD0DAE6F291266C400F96448 /* AppDelegate.swift in Sources */,
 				FD91338929195CC500605396 /* BottomPopupPresentAnimator.swift in Sources */,
+				FDB3E8A7291BBB3700722C81 /* BannerVC.swift in Sources */,
 				FD52168F291A9DA100E8AAE5 /* CardCollection.swift in Sources */,
 				FD521679291A807200E8AAE5 /* AccountFeedVM.swift in Sources */,
 				FD52168C291A99B500E8AAE5 /* CardCollectionViewCell.swift in Sources */,
+				FDB3E8AD291BBFC700722C81 /* BannerCollectionViewCell.swift in Sources */,
 				FD9133482919451800605396 /* FeedType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

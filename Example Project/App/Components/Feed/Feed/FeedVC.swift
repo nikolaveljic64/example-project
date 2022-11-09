@@ -28,6 +28,7 @@ class FeedVC: UIViewController {
         tableView.register(CardCell.nib, forCellReuseIdentifier: CardCell.cellIdentifier)
         tableView.register(CardTypeBothCell.nib, forCellReuseIdentifier: CardTypeBothCell.cellIdentifier)
         tableView.register(CardWidget.nib, forCellReuseIdentifier: CardWidget.cellIdentifier)
+        tableView.register(BannerCell.nib, forCellReuseIdentifier: BannerCell.cellIdentifier)
         
         feedVM.delegate = self
         
@@ -53,23 +54,23 @@ extension FeedVC: UITableViewDelegate, UITableViewDataSource {
         switch data[indexPath.row].type {
         case .cardType1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: CardCell.cellIdentifier, for: indexPath) as? CardCell {
-                cell.configCell(item: data[indexPath.row].cardType1)
                 cell.delegate = self
                 cell.indexPath = indexPath
+                cell.configCell(item: data[indexPath.row].cardType1)
                 return cell
             }
         case .cardType2:
             if let cell = tableView.dequeueReusableCell(withIdentifier: Card2Cell.cellIdentifier, for: indexPath) as? Card2Cell {
-                cell.configCell(item: data[indexPath.row].cardType2)
                 cell.delegate = self
+                cell.configCell(item: data[indexPath.row].cardType2)
                 return cell
             }
         case .cardTypeBoth:
             
             if let cell = tableView.dequeueReusableCell(withIdentifier: CardTypeBothCell.cellIdentifier, for: indexPath) as? CardTypeBothCell {
-                cell.configCell(item: data[indexPath.row].cardType)
                 cell.delegate = self
                 cell.indexPath = indexPath
+                cell.configCell(item: data[indexPath.row].cardType)
                 return cell
             }
         case .collectionViewEmbeded:
@@ -80,6 +81,14 @@ extension FeedVC: UITableViewDelegate, UITableViewDataSource {
             }
             
             break
+        case .banner:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: BannerCell.cellIdentifier, for: indexPath) as? BannerCell {
+                cell.selectionStyle = .none
+                cell.delegate = self
+                cell.indexPath = indexPath
+                cell.configCell(item: data[indexPath.row].banner)
+                return cell
+            }
             
         default: break
         }
@@ -116,11 +125,18 @@ extension FeedVC: CellProtocol {
                 if let cardType = data as? CardModel {
                     self.data[indexPath.row].cardType = cardType
                 }
-           
+    
             default: break
             }
             
             self.tableView.reloadRows(at: [indexPath], with: .automatic)
+            
+        case .seeAll:
+            feedVM.openBannerVC(self)
+        case .hideBanner:
+            guard let indexPath else { return }
+            self.data.remove(at: indexPath.row)
+            self.tableView.deleteRows(at: [indexPath], with: .automatic)
             
             
         default: break

@@ -13,6 +13,7 @@ struct Feed {
     var cardType1: CardModel?
     var cardType2: CardModel?
     var cardType: CardModel?
+    var banner: BannerModel?
     
     var cardArrays: [CardModel]?
 }

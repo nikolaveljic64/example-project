@@ -13,4 +13,5 @@ enum FeedDataType {
     case cardType2
     case cardTypeBoth
     case collectionViewEmbeded
+    case banner
 }

@@ -30,6 +30,21 @@ class AccountVC: BottomPopupViewController {
        
         setupData()
     }
+    
+    // Is better to use with container view to separate table view from this vc or not?
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        switch segue.identifier {
+//        // Main feed
+//        case "accountFeedFromAccountVC":
+//            if let accountFeedVC = segue.destination as? AccountFeedVC {
+//                self.accountFeedVC = accountFeedVC
+//                self.accountFeedVC.accountFeedType = .accounts
+//            }
+//        default: break
+//        }
+//    }
+    
 
     override var popupHeight: CGFloat {
         return UIScreen.main.bounds.size.height * 0.4

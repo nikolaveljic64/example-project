@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 class FeedVM {
     
@@ -53,9 +53,21 @@ class FeedVM {
         
         // Collection View
         data.append(Feed(type: .collectionViewEmbeded, cardArrays: dummyArray2CardModel))
+        
+        // API if banner exists
+        // Collection View
+        data.append(Feed(type: .banner, banner: dummyBanner1))
      
         delegate.onSuccess(data: data, action: .getData)
         
+    }
+    
+    
+    func openBannerVC(_ self: UIViewController) {
+        let storyboard = UIStoryboard(name: "Banner", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "BannerVC") as! BannerVC
+        vc.data = AccountManager.shared.banners
+        self.present(vc, animated: true)
     }
     
 }
