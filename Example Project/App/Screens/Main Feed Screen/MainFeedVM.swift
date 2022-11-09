@@ -15,7 +15,7 @@ class MainFeedVM {
     func openAccount(_ self: UIViewController) {
         let storyboard = UIStoryboard(name: "Account", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "AccountVC") as! AccountVC
-        vc.selectedAccount = AccountManager.shared.selectedAccount
+        vc.selectedAccount = Manager.shared.selectedAccount
         vc.delegate = self as? MainFeedVC
         self.present(vc, animated: true)
     }

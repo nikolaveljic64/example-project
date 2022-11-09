@@ -26,7 +26,7 @@ class AccountVC: BottomPopupViewController {
         tableView.separatorColor = #colorLiteral(red: 0.8352941176, green: 0.8352941176, blue: 0.8352941176, alpha: 1)
         tableView.register(AccountCell.nib, forCellReuseIdentifier: AccountCell.cellIdentifier)
         // This
-        accounts = AccountManager.shared.accounts
+        accounts = Manager.shared.accounts
        
         setupData()
     }
@@ -91,7 +91,7 @@ extension AccountVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        AccountManager.shared.selectedAccount = accounts[indexPath.row]
+        Manager.shared.selectedAccount = accounts[indexPath.row]
       
         delegate?.didSelect(accounts[indexPath.row])
         

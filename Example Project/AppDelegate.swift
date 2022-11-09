@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.overrideUserInterfaceStyle = .dark
         
-        AccountManager.shared.onStart()
+        Manager.shared.onStart()
         
         return true
     }

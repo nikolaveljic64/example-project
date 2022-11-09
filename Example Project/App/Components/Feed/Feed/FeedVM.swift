@@ -28,7 +28,7 @@ class FeedVM {
         // dispatchGroup for waiting for all API to finish
         
         // API different for ID
-        if AccountManager.shared.selectedAccount?.id == 1 {
+        if Manager.shared.selectedAccount?.id == 1 {
             // First Type
             data.append(Feed(type: .cardType1, cardType1: dummyArrayCardModel.first))
         } else {
@@ -66,7 +66,7 @@ class FeedVM {
     func openBannerVC(_ self: UIViewController) {
         let storyboard = UIStoryboard(name: "Banner", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "BannerVC") as! BannerVC
-        vc.data = AccountManager.shared.banners
+        vc.data = Manager.shared.banners
         self.present(vc, animated: true)
     }
     

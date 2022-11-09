@@ -16,7 +16,7 @@ class FeedVC: UIViewController {
     // Private variables
     private var data: [Feed] = []
     private let feedVM = FeedVM()
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,7 +36,17 @@ class FeedVC: UIViewController {
     }
     
     func loadData() {
-        feedVM.getData()
+        switch feedType {
+        case .mainCardFeed:
+            feedVM.getData()
+        case .detailsScreen:
+            break
+            // Example for different cell for other screen type
+//            feedVM.arrangePostFeedData()
+        case .none:
+            break
+        }
+      
     }
 }
 
@@ -162,7 +172,8 @@ extension FeedVC: VCProtocol {
                 self.data = data
                 self.tableView.reloadData()
             }
-        default: break
+        default:
+           break
         }
     }
     

@@ -9,15 +9,13 @@ import UIKit
 
 class MainFeedVC: UIViewController {
     
-    
-    
     var mainFeedVM = MainFeedVM()
     var feedVC: FeedVC!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Main Feed for \(AccountManager.shared.selectedAccount?.name ?? "")"
+        self.title = "Main Feed for \(Manager.shared.selectedAccount?.name ?? "")"
         self.mainFeedVM.delegate = self
     }
     

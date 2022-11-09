@@ -7,10 +7,10 @@
 
 import UIKit
 
+/// Example for other Feed
 class AccountFeedVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-   
     
     // Private variables
     private var data: [AccountFeed] = []

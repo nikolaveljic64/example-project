@@ -107,3 +107,8 @@ extension UIView {
         subview.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor).isActive = true
     }
 }
+
+
+extension Notification.Name {
+    static let accountSelected = Notification.Name("accountSelected")    
+}

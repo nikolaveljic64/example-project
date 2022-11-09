@@ -7,17 +7,22 @@
 
 import Foundation
 
-class AccountManager {
+
+
+class Manager {
     
-    static let shared = AccountManager()
+    static let shared = Manager()
     
     // Acounts
+    /// This is list of account which every user will habe , that means we will always use other ID when we call API
     var accounts = [Account]()
-    var selectedAccount : Account?
-    
-    
+    var selectedAccount : Account? {
+        didSet {
+            /// Reload on every screen which we have or to use delegate?
+            NotificationCenter.default.post(name: .accountSelected, object: nil)
+        }
+    }
     // Banner used in app
-    
     var banners = [BannerModel]()
     
     private init() { }
