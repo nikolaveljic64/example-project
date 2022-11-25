@@ -17,9 +17,8 @@ class CardCell: UITableViewCell {
     @IBOutlet weak var statusSwitch: UISwitch!
     @IBOutlet weak var containerView: UIView!
     
-    weak var delegate: CellProtocol!
-    var indexPath: IndexPath?
-    var item: CardModel?
+  
+    var didToggleStatus: (() -> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -36,6 +35,6 @@ class CardCell: UITableViewCell {
     }
     
     @IBAction func didTapStatusSwitch(_ sender: UISwitch) {
-        delegate.didSelect(indexPath: indexPath, action: .toogleStatus, data: item)
+        didToggleStatus?()
     }
 }
