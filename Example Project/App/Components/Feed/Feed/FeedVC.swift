@@ -40,7 +40,7 @@ class FeedVC: UIViewController {
     func loadData() {
         switch feedType {
         case .mainCardFeed:
-            feedVM.getData()
+            feedVM.getData(self: self)
         case .detailsScreen:
             break
             // Example for different cell for other screen type
@@ -70,47 +70,17 @@ extension FeedVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         data[indexPath.row].tableView(tableView, didSelectRowAt: indexPath)
     }
+}
+
+extension FeedVC: BannerCellControllerCellProtocol {
+    func didTapHide(indexPath: IndexPath) {
+        self.data.remove(at: indexPath.row)
+        self.tableView.deleteRows(at: [indexPath], with: .automatic)
+    }
+    
     
 }
 
-extension FeedVC {
-    
-//    func didSelect(indexPath: IndexPath?, action: CellAction?, data: Any?) {
-//        switch action {
-//        case .toogleStatus:
-//            guard let indexPath else { return }
-//
-//            switch self.data[indexPath.row].type {
-//            case .cardType1:
-//                self.data[indexPath.row].cardType1?.active.toggle()
-//            case .cardTypeBoth:
-//                // To pass data
-//                if let cardType = data as? CardModel {
-//                    self.data[indexPath.row].cardType = cardType
-//                }
-//
-//            default: break
-//            }
-//
-//            self.tableView.reloadRows(at: [indexPath], with: .automatic)
-//
-//        case .seeAll:
-//            feedVM.openBannerVC(self)
-//        case .hideBanner:
-//            guard let indexPath else { return }
-//            self.data.remove(at: indexPath.row)
-//            self.tableView.deleteRows(at: [indexPath], with: .automatic)
-//
-//
-//        default: break
-//        }
-//    }
-    
-    func scrollTo(indexPath: IndexPath?) {
-        
-    }
-    
-}
 
 extension FeedVC: VCProtocol {
     

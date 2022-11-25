@@ -12,7 +12,7 @@ class FeedVM {
     
     weak var delegate: VCProtocol!
     
-    func getData() {
+    func getData(self: UIViewController) {
     
         delegate.inProgress(action: .getData)
             
@@ -23,7 +23,10 @@ class FeedVM {
         
         data.append(CardType2CellController(model: dummyCardModelOne))
         
-        data.append(BannerCellController(model: dummyBanner1))
+        
+        let bannerCellController = BannerCellController(model: dummyBanner1, delegate: self as! FeedVC)
+        
+        data.append(bannerCellController)
         
         data.append(CardWidgetCellCellController(items: dummyArrayCardModel))
     

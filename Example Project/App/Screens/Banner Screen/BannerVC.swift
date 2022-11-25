@@ -47,9 +47,9 @@ extension BannerVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BannerCollectionViewCell.cellIdentifier, for: indexPath) as? BannerCollectionViewCell {
-            cell.indexPath = indexPath
-            cell.delegate = self
-            cell.configCell(item: data[indexPath.row])
+//            cell.indexPath = indexPath
+//            cell.delegate = self
+//            cell.configCell(item: data[indexPath.row])
             return cell
         }
         

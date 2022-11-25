@@ -16,7 +16,7 @@ class BannerCollectionViewCell: UICollectionViewCell {
     private var bannerCell : BannerCell?
     
     var indexPath: IndexPath!
-    weak var delegate: BannerCellProtocol?
+  
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,24 +25,18 @@ class BannerCollectionViewCell: UICollectionViewCell {
     
     func configCell(item: BannerModel?) {
         guard let item else { return }
-        
-        if bannerCell == nil {
-            let cell : BannerCell = BannerCell.fromNib()
-            self.bannerCell = cell
-            cell.configCell(item: item)
-            // Send action from child vc or cell
-            /// It easy if `BannerVC` use `CellProtocol` but what if we have different protocol for communicating
-            cell.bannerCellDelegate = delegate
-            cell.indexPath = indexPath
-            cell.seeAllButton.superview?.isHidden = true
-            containerView.addConstrainedSubview(subview: cell)
-        } else {
-            bannerCell?.indexPath = indexPath
-        }
+//
+//        if bannerCell == nil {
+//            let cell : BannerCell = BannerCell.fromNib()
+//            self.bannerCell = cell
+//            cell.configCell(item: item)
+//
+//            cell.seeAllButton.superview?.isHidden = true
+//            containerView.addConstrainedSubview(subview: cell)
+//        } else {
+//            bannerCell?.indexPath = indexPath
+//        }
             
-        
-       
-        
     }
 
 }
