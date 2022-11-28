@@ -7,16 +7,14 @@
 
 import UIKit
 
-
 class FeedVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var feedType: FeedType!
+    var loadData: (() -> Void)?
     
     // Private variables
     private var data: [CellController] = []
-    private let feedVM = FeedVM()
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,32 +22,16 @@ class FeedVC: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.contentInset = .init(top: 25, left: 0, bottom: 25, right: 0)
+                
+        loadData?()
         
-
-        BannerCellController.configure(tableView: tableView)
-        CardType1CellController.configure(tableView: tableView)
-        CardType2CellController.configure(tableView: tableView)
-        CardWidgetCellCellController.configure(tableView: tableView)
-        
-        
-        feedVM.delegate = self
-        
-        loadData()
     }
     
-    func loadData() {
-        switch feedType {
-        case .mainCardFeed:
-            feedVM.getData(self: self)
-        case .detailsScreen:
-            break
-            // Example for different cell for other screen type
-//            feedVM.arrangePostFeedData()
-        case .none:
-            break
-        }
-      
+    func set(data: [CellController]) {
+        self.data = data
+        self.tableView.reloadData()
     }
+ 
 }
 
 extension FeedVC: UITableViewDelegate, UITableViewDataSource {
@@ -77,32 +59,5 @@ extension FeedVC: BannerCellControllerCellProtocol {
         self.data.remove(at: indexPath.row)
         self.tableView.deleteRows(at: [indexPath], with: .automatic)
     }
-    
-    
-}
-
-
-extension FeedVC: VCProtocol {
-    
-    func inProgress(action: Action?) {
-        
-    }
-    
-    func onSuccess(data: Any?, action: Action?) {
-        switch action {
-        case .getData:
-            if let data = data as? [CellController] {
-                self.data = data
-                self.tableView.reloadData()
-            }
-        default:
-           break
-        }
-    }
-    
-    func onError(error: Error, action: Action?) {
-        print(error.localizedDescription)
-    }
-    
     
 }

@@ -10,12 +10,12 @@ import UIKit
 
 class FeedVM {
     
-    weak var delegate: VCProtocol!
+    
+    var completion: (([CellController]) -> Void)?
     
     func getData(self: UIViewController) {
     
-        delegate.inProgress(action: .getData)
-            
+
         var data: [CellController] = []
         
         
@@ -31,8 +31,7 @@ class FeedVM {
         data.append(CardWidgetCellCellController(items: dummyArrayCardModel))
     
     
-     
-        delegate.onSuccess(data: data, action: .getData)
+        completion?(data)
         
     }
     

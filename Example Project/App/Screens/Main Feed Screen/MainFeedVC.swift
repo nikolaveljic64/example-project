@@ -17,6 +17,11 @@ class MainFeedVC: UIViewController {
         super.viewDidLoad()
         self.title = "Main Feed for \(Manager.shared.selectedAccount?.name ?? "")"
         self.mainFeedVM.delegate = self
+        
+        BannerCellController.configure(tableView: feedVC.tableView)
+        CardType1CellController.configure(tableView: feedVC.tableView)
+        CardType2CellController.configure(tableView: feedVC.tableView)
+        CardWidgetCellCellController.configure(tableView: feedVC.tableView)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -25,7 +30,11 @@ class MainFeedVC: UIViewController {
         case "mainFeedToFeed":
             if let feedVC = segue.destination as? FeedVC {
                 self.feedVC = feedVC
-                self.feedVC.feedType = .mainCardFeed
+                let feedVM = FeedVM()
+                self.feedVC.loadData = { feedVM.getData(self: feedVC) }
+                feedVM.completion = { [weak feedVC] data in
+                    feedVC?.set(data: data)
+                }
             }
         default: break
         }
@@ -39,7 +48,6 @@ class MainFeedVC: UIViewController {
 extension MainFeedVC: AccountVCProtocol {
     func didSelect(_ account: Account) {
         self.title = "Main Feed for \(account.name ?? "")"
-        self.feedVC.loadData()
     }
 }
 

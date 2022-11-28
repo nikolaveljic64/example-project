@@ -16,7 +16,7 @@ class BannerCellController: CellController {
    
     private var model: BannerModel?
    
-    weak var delegate: BannerCellControllerCellProtocol?
+    weak private var delegate: BannerCellControllerCellProtocol?
     
     init(model: BannerModel, delegate: BannerCellControllerCellProtocol?) {
         self.model = model
